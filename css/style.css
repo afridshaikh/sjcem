@@ -132,7 +132,11 @@ ul.menu li div {
     opacity: 0.8; }
 
 .home-img {
-  padding: 0; }
+  padding: 0;
+  margin-top: -70px;
+  z-index: -120;
+  -webkit-filter: blur(1px);
+  filter: blur(1px); }
   .home-img img {
     width: 100%;
     height: 100vh; }
@@ -141,12 +145,20 @@ ul.menu li div {
     height: 50vh; }
 
 .nba-section div.nba {
-  top: auto;
-  bottom: auto;
+  height: 150px;
+  text-align: center;
   background-color: white;
   color: green;
-  text-align: center;
-  height: 150px; }
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .nba-section div.nba div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
   .nba-section div.nba p {
     font-size: 15px; }
   .nba-section div.nba:hover {

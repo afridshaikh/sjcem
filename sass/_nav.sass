@@ -97,10 +97,14 @@ ul.menu li
 
 .home-img
   padding: 0
+  margin-top: -70px
+  z-index: -120
+  filter: blur(1px)
 
   img
     width: 100%
     height: 100vh
+
   img.col-xs-12
     width: 100%
     height: 50vh
@@ -114,12 +118,15 @@ ul.menu li
 
 .nba-section
   div.nba
-    top: auto
-    bottom: auto
+    height: 150px
+    text-align: center
     background-color: white
     color: $one
-    text-align: center
-    height: 150px
+    display: flex
+
+    div
+      flex-direction: column
+
 
     p
       font-size: 15px
