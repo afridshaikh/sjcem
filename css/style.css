@@ -136,16 +136,27 @@ ul.menu li div {
   height: 100vh;
   margin-top: -100px; }
 
-.nba-section .vision {
-  padding: 20px;
-  border: green solid 2px; }
-  .nba-section .vision .vision-head, .nba-section .vision h1 {
-    margin: 0;
-    margin-bottom: 10px;
-    text-align: center; }
-  .nba-section .vision .vision-body {
-    padding: 0;
-    text-align: center; }
+.nba-section div.nba {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  top: auto;
+  bottom: auto;
+  background-color: white;
+  color: green;
+  text-align: center;
+  height: 150px; }
+  .nba-section div.nba p {
+    font-size: 15px; }
+  .nba-section div.nba:hover {
+    background-color: green;
+    color: white; }
 
 .space {
   width: 100%;
