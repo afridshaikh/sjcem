@@ -1,0 +1,107 @@
+$four: white
+.header-title
+  color: $one
+.main-nav
+  margin: 0
+
+
+.background-div
+  height: 100vh
+  width: 100%
+  z-index: -1
+  position: fixed
+  top: 0
+
+
+
+nav
+  font-family: 'Source Sans Pro', sans-serif
+  text-align: right
+  position: relative
+  margin: 0
+  width: 100%
+  top: 10px
+
+
+  ul.menu
+    perspective: 1000px
+    text-align: right
+    height: 100%
+    margin: 0
+    display: inline-block
+    color: $one
+
+    > li
+      position: relative
+      padding: 10px
+      float: left
+      text-align: center
+      margin: 3px
+      list-style: none
+      height: 50px
+      font-size: 17px
+      background: lighten($one, 05%)
+      color: $four
+      border-radius: 5px
+      z-index: 1
+      &:hover
+        border-radius: 5px 5px 0 0
+        font-size: 17px
+        border: 0
+        margin: 0
+        box-shadow: 0
+        div
+          @for $i from 1 through 6
+            &:nth-child(#{$i})
+              animation:
+                name: animateMenu
+                duration: 300ms * $i
+                delay:
+                timing-function: ease-in-out
+          display: block
+          background: lighten($one, 05%)
+          color: $four
+          z-index: 1
+
+
+@keyframes animateMenu
+  0%
+    transform: scale(0.5) translateY(30px)
+    opacity: 0.1
+
+  70%
+    transform: scale(1.2)
+
+  100%
+    transform: scale(1) translateY(0px)
+    opacity: 1
+
+
+
+ul.menu li
+  div:last-child
+    border-radius: 0 0 5px 5px
+  div
+    padding: 10px
+    width: 100%
+    &:hover
+      opacity: 0.8
+    display: none
+    z-index: 1
+
+
+
+.home-image
+  height: 100vh
+  width: 100%
+  margin: 0
+  margin-top: -120px
+
+.img-responsive
+  width: 100%
+
+
+
+.space
+	width: 100%
+	height: 100vh
