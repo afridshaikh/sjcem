@@ -225,6 +225,28 @@ div.syllabus {
     div.syllabus div.data .col-xs.12 {
       padding: 5px; }
 
+div.map {
+  padding: 0;
+  margin: 0;
+  height: 300px;
+  width: 100%;
+  background-color: #eee; }
+  div.map .map-sec1 {
+    padding: 0;
+    height: 100%;
+    background-color: red;
+    border-right: 1px solid #ccc; }
+    div.map .map-sec1 #map {
+      padding: 5%;
+      width: 90%;
+      height: 90%; }
+  div.map .map-sec2 {
+    height: 100%;
+    padding-left: 0;
+    background-color: blue; }
+    div.map .map-sec2 .col-xs-12 {
+      height: 50vh; }
+
 .space {
   width: 100%;
   height: 100vh; }
