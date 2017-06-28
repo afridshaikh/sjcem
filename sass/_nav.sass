@@ -123,10 +123,12 @@ ul.menu li
     background-color: white
     color: $one
     display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
 
     div
-      flex-direction: column
-
+      width: auto
 
     p
       font-size: 15px
@@ -134,9 +136,53 @@ ul.menu li
     &:hover
       background-color: $one
       color: white
+      h1, p
+        transition: all 15ms linear
+        transform: scale(1.4)
+
+
 
 // ---------------------------------------------------------- NBA section ends here-----------------------------
 
+
+
+
+// syllabus
+
+div.syllabus-heading
+  background-color: green
+  color: white
+  text-align: center
+
+div.syllabus
+  padding: 20px 0 50px 0
+  position: relative
+  background-color: green
+
+  div
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    &:hover
+      div
+        color: green
+        transition: all 15ms linear
+        transform: scale(1.2)
+  div.data
+    display: inline-block
+    padding: 10px 20px 10px 20px
+    border-radius: 100%
+    background-color: white
+    color: $two
+
+    .col-xs.12
+      padding: 5px
+
+
+
+
+// ------------------------------------------------------------------ syllabus ----------------------------------------
 
 .space
 	width: 100%
