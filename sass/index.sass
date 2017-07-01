@@ -29,7 +29,6 @@ $four: white
 
 
   ul.menu
-    perspective: 1000px
     text-align: right
     height: 100%
     margin: 0
@@ -50,6 +49,8 @@ $four: white
       border-radius: 5px
       z-index: 1
       &:hover
+        &:first-child
+          border-radius: 5px
         border-radius: 5px 5px 0 0
         font-size: 17px
         border: 0
@@ -160,29 +161,32 @@ div.syllabus
   position: relative
   background-color: green
 
-  div
+  .data-container
     display: flex
     flex-direction: column
     align-items: center
     justify-content: center
-    &:hover
-      div
-        color: green
-        transition: all 15ms linear
-        transform: scale(1.2)
-  div.data
-    display: inline-block
-    padding: 10px 20px 10px 20px
-    border-radius: 100%
-    background-color: white
-    color: $two
 
-    .col-xs.12
-      padding: 5px
+    .data
+        display: inline-block
+        margin: 5px
+        padding: 10px 20px 10px 20px
+        border-radius: 100%
+        background-color: white
+        color: $two
+        &:hover
+          transition: all 15ms linear
+          transform: translateY(5px) scale(1.1)
+    .option
+      display: none
+      .data
+        padding: 20px 10px 20px 10px
+
+
 
 // ------------------------------------------------------------------ syllabus ends here----------------------------------------
 
-// ------------------------------------------------------------------ Map ----------------------------------------
+// Map
 
 div.map
   padding: 0

@@ -1,0 +1,51 @@
+
+.project-year
+  height: 100vh
+  width: 100%
+  margin: 0
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: center
+  background-color: #eee
+  .year-btn
+    background-color: #4CAF50
+    color: white
+    font-size: 19px
+    a
+      &:active
+        color: white
+      &:visited
+        color: white
+
+    &:hover
+      background-color: green
+      transition: all 200ms ease-in-out
+      transform: translateY(-5px) scale(1.2)
+      box-shadow: 5px 5px 2px #ccc
+.table-row
+  margin: 0
+  padding: 10px 20px 5px 20px
+  table
+    tr
+      &:hover
+        transition: all 1ms ease-in-out
+        transform: scale(1.01)
+        td
+          color: black
+        th
+          color: white
+
+      &:nth-child(odd)
+        background-color: #eee
+
+    th
+      background-color: #4CAF50
+      color: white
+      text-align: center
+      font-size: 19px
+    td
+      text-align: center
+      color: #ccc - #ccc/2
+      font-weight: 600
+      font-size: 15px
