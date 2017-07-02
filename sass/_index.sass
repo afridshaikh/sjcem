@@ -8,6 +8,15 @@ $four: white
 
 // heading part
 
+a
+  color: white
+  &:hover
+    color: white
+  &:active
+    color: white
+  &:visited
+    color: white
+
 div.home-nav-section
   height: 100vh
   width: 100%
@@ -17,82 +26,82 @@ div.home-nav-section
   opacity: 0.8
   z-index: 1
 
-  .nav-row
-    margin-top: 5px
-    margin-bottom: 5px
-    padding: 5px 10px 5px 10px
+.nav-row
+  margin-top: 5px
+  margin-bottom: 5px
+  padding: 5px 10px 5px 10px
+  margin: 0
+  background-color: green
+
+  .nav-title
     margin: 0
-    background-color: green
-
-    .nav-title
+    color: white
+    opacity: 0.7
+    .logo
+      height: 50px
+      width: 60px
+      padding-bottom: 10px
+      display: inline-block
+    h1
+      display: inline-block
+      padding: 5px
       margin: 0
-      color: white
-      opacity: 0.7
-      .logo
-        height: 50px
-        width: 60px
-        padding-bottom: 10px
-        display: inline-block
-      h1
-        display: inline-block
-        padding: 5px
-        margin: 0
-      &:hover
-        opacity: 1
+    &:hover
+      opacity: 1
 
-    .menu-container
-      text-align: right
-      color: white
-      ul.menu
-        display: inline-block
-        margin: 0
-        list-style: none
-        li.menu-item
-          position: relative
-          float: left
-          padding: 5px
-          margin: 5px
-          font-size: 1.4em
-          opacity: 0.7
-          a
-            &:active
-              color: white
-              opacity: 1
-            &:visited
-              color: white
-              opacity: 1
-          &:hover
-            transform: translatey(-1px)
+  .menu-container
+    text-align: right
+    color: white
+    ul.menu
+      display: inline-block
+      margin: 0
+      list-style: none
+      li.menu-item
+        position: relative
+        float: left
+        padding: 5px
+        margin: 5px
+        font-size: 1.4em
+        opacity: 0.7
+        a
+          &:active
+            color: white
             opacity: 1
-            ul.list
-              li.list-item
-                display: block
-                @for $i from 1 through 6
-                            &:nth-child(#{$i})
-                              animation:
-                                name: animateMenu
-                                duration: 300ms * $i
-                                timing-function: ease-in-out
+          &:visited
+            color: white
+            opacity: 1
+        &:hover
+          transform: translatey(-1px)
+          opacity: 1
           ul.list
-            position: absolute
-            width: 100%
-            background-color: none
-            list-style: none
             li.list-item
-              color: white
-              padding: 10px
-              display: none
-              text-align: center
-              background-color: green
-              font-size: 0.8em
-              &:first-child
-                padding-top: 1.2em
-              &:last-child
-                border-radius: 0 0 5px 5px
-              &:hover
-                opacity: 0.95
-                transform: scale(1.1)
-                border-radius:  5px
+              display: block
+              @for $i from 1 through 6
+                          &:nth-child(#{$i})
+                            animation:
+                              name: animateMenu
+                              duration: 300ms * $i
+                              timing-function: ease-in-out
+        ul.list
+          position: absolute
+          width: 100%
+          background-color: none
+          list-style: none
+          li.list-item
+            color: white
+            padding: 10px
+            display: none
+            text-align: center
+            background-color: green
+            font-size: 0.8em
+            &:first-child
+              padding-top: 1.2em
+            &:last-child
+              border-radius: 0 0 5px 5px
+            &:hover
+              opacity: 0.95
+              transform: scale(1.1)
+              border-radius:  5px
 
 
 @keyframes animateMenu

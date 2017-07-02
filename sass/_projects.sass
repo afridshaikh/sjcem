@@ -1,37 +1,19 @@
+.project-nav-container
+  height: 100vh
+  display: flex
+  flex-direction: column
 
 .project-year
+  flex-grow: 1
   position: relative
-  height: 100vh
   width: 100%
   margin: 0
-  background-color: #eee
-  div
-    position: relative
-    height: 100%
+  z-index: -1
+  .message-head
     text-align: center
-    .year-btn
-      position: relative
-      top: 40%
-      display: inline-block
-      background-color: #4CAF50
-      color: white
-      font-size: 19px
-      a
-        &:active
-          color: white
-        &:visited
-          color: white
-        &:hover
-          color: white
+    color: green
 
-      &:hover
-        background-color: green
-        transition: all 200ms ease-in-out
-        transform: translateY(-5px) scale(1.2)
-        box-shadow: 5px 5px 2px #ccc
-
-
-
+//------ table section
 .table-row
 
   margin: 0
