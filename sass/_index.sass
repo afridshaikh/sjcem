@@ -1,0 +1,265 @@
+$four: white
+
+*
+  padding: 0
+  margin: 0
+.row
+  margin: 0
+
+// heading part
+
+div.home-nav-section
+  height: 100vh
+  width: 100%
+  display: flex
+  flex-direction: column
+  background-color: lightgreen
+  opacity: 0.8
+  z-index: 1
+
+  .nav-row
+    margin-top: 5px
+    margin-bottom: 5px
+    padding: 5px 10px 5px 10px
+    margin: 0
+    background-color: green
+
+    .nav-title
+      margin: 0
+      color: white
+      opacity: 0.7
+      .logo
+        height: 50px
+        width: 60px
+        padding-bottom: 10px
+        display: inline-block
+      h1
+        display: inline-block
+        padding: 5px
+        margin: 0
+      &:hover
+        opacity: 1
+
+    .menu-container
+      text-align: right
+      color: white
+      ul.menu
+        display: inline-block
+        margin: 0
+        list-style: none
+        li.menu-item
+          position: relative
+          float: left
+          padding: 5px
+          margin: 5px
+          font-size: 1.4em
+          opacity: 0.7
+          a
+            &:active
+              color: white
+              opacity: 1
+            &:visited
+              color: white
+              opacity: 1
+          &:hover
+            transform: translatey(-2px)
+            opacity: 1
+            ul.list
+              li.list-item
+                display: block
+                @for $i from 1 through 6
+                            &:nth-child(#{$i})
+                              animation:
+                                name: animateMenu
+                                duration: 300ms * $i
+                                timing-function: ease-in-out
+          ul.list
+            position: absolute
+            width: 100%
+            background-color: none
+            list-style: none
+            li.list-item
+              color: white
+              padding: 10px
+              display: none
+              text-align: center
+              background-color: green
+              font-size: 0.8em
+              &:first-child
+                padding-top: 1.2em
+              &:last-child
+                border-radius: 0 0 5px 5px
+              &:hover
+                opacity: 0.95
+                transform: scale(1.1)
+                border-radius:  5px
+
+
+@keyframes animateMenu
+  0%
+    transform: scale(0.5) translateY(30px)
+    opacity: 0.1
+
+  70%
+    transform: scale(1.2)
+
+  100%
+    transform: scale(1) translateY(0px)
+    opacity: 1
+
+
+.welcome-message
+  flex-grow: 1
+  position: relative
+  z-index: -1
+  width: 100%
+  height: auto
+  background-color: pink
+  .part1
+    position: relative
+    top: 5%
+    bottom: 5%
+    height: 90%
+    position: relative
+    border: 2px solid black
+    border-left: 0
+    border-top: 0
+    border-bottom: 0
+    box-sizing: border-box
+
+  .part2
+    position: relative
+    height: 100%
+    h1
+      position: relative
+      display: inline-block
+      left: 1px
+      right: 1px
+      top: 40%
+
+
+
+
+
+//------------------------------------------------------------------heading ends here -------------------------
+
+
+
+// NBA section
+
+.nba-heading
+  background-color: green
+  color: white
+  text-align: center
+  font-size: 4em
+
+
+.nba-section
+  margin: 0
+  div.nba
+    height: 150px
+    text-align: center
+    background-color: white
+    color: green
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+
+    div
+      width: auto
+
+    p
+      font-size: 15px
+
+    &:hover
+      background-color: green
+      color: white
+      h1, p
+        transition: all 15ms linear
+        transform: scale(1.4)
+
+
+
+// ---------------------------------------------------------- NBA section ends here-----------------------------
+
+
+
+
+// syllabus
+
+div.syllabus-heading
+  margin: 0
+  background-color: green
+  color: white
+  text-align: center
+
+
+div.syllabus
+  padding: 20px 0 50px 0
+  position: relative
+  background-color: green
+
+  .data-container
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+
+    .data
+        display: inline-block
+        margin: 5px
+        padding: 10px 20px 10px 20px
+        border-radius: 100%
+        background-color: white
+        color: rbg(40,101,183)
+        opacity: 0.8
+        abbr
+          text-decoration: none
+          border: 0
+          cursor: pointer
+        &:hover
+          transition: all 15ms linear
+          transform: translateY(5px) scale(1.1)
+          opacity: 1
+    .option
+      display: none
+      .data
+        padding: 20px 10px 20px 10px
+
+
+
+// ------------------------------------------------------------------ syllabus ends here----------------------------------------
+
+// Map
+
+div.map
+  padding: 0
+  margin: 0
+  height: 50vh
+  width: 100%
+
+  .map-sec1
+    padding: 0
+    height: 100%
+    background-color: white
+    border-right: 1px solid #ccc
+    #map
+      padding: 5%
+      width: 90%
+      height: 90%
+
+  .map-sec2
+    height: 100%
+    padding-left:  0
+    background-color: white
+    .col-xs-12
+      height: 50vh
+
+
+
+
+// ------------------------------------------------------------------ map ends here ----------------------------------------
+.space
+	width: 100%
+	height: 100vh

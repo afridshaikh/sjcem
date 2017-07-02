@@ -1,98 +1,137 @@
-.header-title {
-  color: green; }
-
-.main-nav {
+* {
+  padding: 0;
   margin: 0; }
 
-.background-div {
+.row {
+  margin: 0; }
+
+div.home-nav-section {
   height: 100vh;
   width: 100%;
-  z-index: -1;
-  position: fixed;
-  top: 0; }
-
-.navi {
-  font-family: 'Source Sans Pro', sans-serif;
-  text-align: right;
-  position: relative;
-  margin: 0;
-  width: 100%;
-  top: 10px; }
-  .navi ul.menu {
-    text-align: right;
-    height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: lightgreen;
+  opacity: 0.8;
+  z-index: 1; }
+  div.home-nav-section .nav-row {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px 10px 5px 10px;
     margin: 0;
-    display: inline-block;
-    color: green; }
-    .navi ul.menu > li {
-      position: relative;
-      padding: 10px;
-      float: left;
-      text-align: center;
-      margin: 3px;
-      list-style: none;
-      height: 50px;
-      font-size: 17px;
-      background: #009a00;
+    background-color: green; }
+    div.home-nav-section .nav-row .nav-title {
+      margin: 0;
       color: white;
-      border-radius: 5px;
-      z-index: 1; }
-      .navi ul.menu > li:hover {
-        border-radius: 5px 5px 0 0;
-        font-size: 17px;
-        border: 0;
+      opacity: 0.7; }
+      div.home-nav-section .nav-row .nav-title .logo {
+        height: 50px;
+        width: 60px;
+        padding-bottom: 10px;
+        display: inline-block; }
+      div.home-nav-section .nav-row .nav-title h1 {
+        display: inline-block;
+        padding: 5px;
+        margin: 0; }
+      div.home-nav-section .nav-row .nav-title:hover {
+        opacity: 1; }
+    div.home-nav-section .nav-row .menu-container {
+      text-align: right;
+      color: white; }
+      div.home-nav-section .nav-row .menu-container ul.menu {
+        display: inline-block;
         margin: 0;
-        -webkit-box-shadow: 0;
-        box-shadow: 0; }
-        .navi ul.menu > li:hover:first-child {
-          border-radius: 5px; }
-        .navi ul.menu > li:hover div {
-          display: block;
-          background: #009a00;
-          color: white;
-          z-index: 1; }
-          .navi ul.menu > li:hover div:nth-child(1) {
-            -webkit-animation-name: animateMenu;
-            animation-name: animateMenu;
-            -webkit-animation-duration: 300ms;
-            animation-duration: 300ms;
-            -webkit-animation-timing-function: ease-in-out;
-            animation-timing-function: ease-in-out; }
-          .navi ul.menu > li:hover div:nth-child(2) {
-            -webkit-animation-name: animateMenu;
-            animation-name: animateMenu;
-            -webkit-animation-duration: 600ms;
-            animation-duration: 600ms;
-            -webkit-animation-timing-function: ease-in-out;
-            animation-timing-function: ease-in-out; }
-          .navi ul.menu > li:hover div:nth-child(3) {
-            -webkit-animation-name: animateMenu;
-            animation-name: animateMenu;
-            -webkit-animation-duration: 900ms;
-            animation-duration: 900ms;
-            -webkit-animation-timing-function: ease-in-out;
-            animation-timing-function: ease-in-out; }
-          .navi ul.menu > li:hover div:nth-child(4) {
-            -webkit-animation-name: animateMenu;
-            animation-name: animateMenu;
-            -webkit-animation-duration: 1200ms;
-            animation-duration: 1200ms;
-            -webkit-animation-timing-function: ease-in-out;
-            animation-timing-function: ease-in-out; }
-          .navi ul.menu > li:hover div:nth-child(5) {
-            -webkit-animation-name: animateMenu;
-            animation-name: animateMenu;
-            -webkit-animation-duration: 1500ms;
-            animation-duration: 1500ms;
-            -webkit-animation-timing-function: ease-in-out;
-            animation-timing-function: ease-in-out; }
-          .navi ul.menu > li:hover div:nth-child(6) {
-            -webkit-animation-name: animateMenu;
-            animation-name: animateMenu;
-            -webkit-animation-duration: 1800ms;
-            animation-duration: 1800ms;
-            -webkit-animation-timing-function: ease-in-out;
-            animation-timing-function: ease-in-out; }
+        list-style: none; }
+        div.home-nav-section .nav-row .menu-container ul.menu li.menu-item {
+          position: relative;
+          float: left;
+          padding: 5px;
+          margin: 5px;
+          font-size: 1.4em;
+          opacity: 0.7; }
+          div.home-nav-section .nav-row .menu-container ul.menu li.menu-item a:active {
+            color: white;
+            opacity: 1; }
+          div.home-nav-section .nav-row .menu-container ul.menu li.menu-item a:visited {
+            color: white;
+            opacity: 1; }
+          div.home-nav-section .nav-row .menu-container ul.menu li.menu-item:hover {
+            -webkit-transform: translatey(-2px);
+            -ms-transform: translatey(-2px);
+            transform: translatey(-2px);
+            opacity: 1; }
+            div.home-nav-section .nav-row .menu-container ul.menu li.menu-item:hover ul.list li.list-item {
+              display: block; }
+              div.home-nav-section .nav-row .menu-container ul.menu li.menu-item:hover ul.list li.list-item:nth-child(1) {
+                -webkit-animation-name: animateMenu;
+                animation-name: animateMenu;
+                -webkit-animation-duration: 300ms;
+                animation-duration: 300ms;
+                -webkit-animation-timing-function: ease-in-out;
+                animation-timing-function: ease-in-out; }
+              div.home-nav-section .nav-row .menu-container ul.menu li.menu-item:hover ul.list li.list-item:nth-child(2) {
+                -webkit-animation-name: animateMenu;
+                animation-name: animateMenu;
+                -webkit-animation-duration: 600ms;
+                animation-duration: 600ms;
+                -webkit-animation-timing-function: ease-in-out;
+                animation-timing-function: ease-in-out; }
+              div.home-nav-section .nav-row .menu-container ul.menu li.menu-item:hover ul.list li.list-item:nth-child(3) {
+                -webkit-animation-name: animateMenu;
+                animation-name: animateMenu;
+                -webkit-animation-duration: 900ms;
+                animation-duration: 900ms;
+                -webkit-animation-timing-function: ease-in-out;
+                animation-timing-function: ease-in-out; }
+              div.home-nav-section .nav-row .menu-container ul.menu li.menu-item:hover ul.list li.list-item:nth-child(4) {
+                -webkit-animation-name: animateMenu;
+                animation-name: animateMenu;
+                -webkit-animation-duration: 1200ms;
+                animation-duration: 1200ms;
+                -webkit-animation-timing-function: ease-in-out;
+                animation-timing-function: ease-in-out; }
+              div.home-nav-section .nav-row .menu-container ul.menu li.menu-item:hover ul.list li.list-item:nth-child(5) {
+                -webkit-animation-name: animateMenu;
+                animation-name: animateMenu;
+                -webkit-animation-duration: 1500ms;
+                animation-duration: 1500ms;
+                -webkit-animation-timing-function: ease-in-out;
+                animation-timing-function: ease-in-out; }
+              div.home-nav-section .nav-row .menu-container ul.menu li.menu-item:hover ul.list li.list-item:nth-child(6) {
+                -webkit-animation-name: animateMenu;
+                animation-name: animateMenu;
+                -webkit-animation-duration: 1800ms;
+                animation-duration: 1800ms;
+                -webkit-animation-timing-function: ease-in-out;
+                animation-timing-function: ease-in-out; }
+          div.home-nav-section .nav-row .menu-container ul.menu li.menu-item ul.list {
+            position: absolute;
+            width: 100%;
+            background-color: none;
+            list-style: none; }
+            div.home-nav-section .nav-row .menu-container ul.menu li.menu-item ul.list li.list-item {
+              color: white;
+              padding: 10px;
+              display: none;
+              text-align: center;
+              background-color: green;
+              font-size: 0.8em; }
+              div.home-nav-section .nav-row .menu-container ul.menu li.menu-item ul.list li.list-item:first-child {
+                padding-top: 1.2em; }
+              div.home-nav-section .nav-row .menu-container ul.menu li.menu-item ul.list li.list-item:last-child {
+                border-radius: 0 0 5px 5px; }
+              div.home-nav-section .nav-row .menu-container ul.menu li.menu-item ul.list li.list-item:hover {
+                opacity: 0.95;
+                -webkit-transform: scale(1.1);
+                -ms-transform: scale(1.1);
+                transform: scale(1.1);
+                border-radius: 5px; }
 
 @-webkit-keyframes animateMenu {
   0% {
@@ -120,68 +159,85 @@
     transform: scale(1) translateY(0px);
     opacity: 1; } }
 
-ul.menu li div:last-child {
-  border-radius: 0 0 5px 5px; }
-
-ul.menu li div {
-  padding: 10px;
+.welcome-message {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  position: relative;
+  z-index: -1;
   width: 100%;
-  display: none;
-  z-index: 1; }
-  ul.menu li div:hover {
-    opacity: 0.8; }
+  height: auto;
+  background-color: pink; }
+  .welcome-message .part1 {
+    position: relative;
+    top: 5%;
+    bottom: 5%;
+    height: 90%;
+    position: relative;
+    border: 2px solid black;
+    border-left: 0;
+    border-top: 0;
+    border-bottom: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+  .welcome-message .part2 {
+    position: relative;
+    height: 100%; }
+    .welcome-message .part2 h1 {
+      position: relative;
+      display: inline-block;
+      left: 1px;
+      right: 1px;
+      top: 40%; }
 
-.home-img {
-  padding: 0;
-  margin-top: -70px;
-  z-index: -120;
-  -webkit-filter: blur(1px);
-  filter: blur(1px); }
-  .home-img img {
-    width: 100%;
-    height: 100vh; }
-  .home-img img.col-xs-12 {
-    width: 100%;
-    height: 50vh; }
-
-.nba-section div.nba {
-  height: 150px;
+.nba-heading {
+  background-color: green;
+  color: white;
   text-align: center;
-  background-color: white;
-  color: green;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
-  .nba-section div.nba div {
-    width: auto; }
-  .nba-section div.nba p {
-    font-size: 15px; }
-  .nba-section div.nba:hover {
-    background-color: green;
-    color: white; }
-    .nba-section div.nba:hover h1, .nba-section div.nba:hover p {
-      -webkit-transition: all 15ms linear;
-      -o-transition: all 15ms linear;
-      transition: all 15ms linear;
-      -webkit-transform: scale(1.4);
-      -ms-transform: scale(1.4);
-      transform: scale(1.4); }
+  font-size: 4em; }
+
+.nba-section {
+  margin: 0; }
+  .nba-section div.nba {
+    height: 150px;
+    text-align: center;
+    background-color: white;
+    color: green;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .nba-section div.nba div {
+      width: auto; }
+    .nba-section div.nba p {
+      font-size: 15px; }
+    .nba-section div.nba:hover {
+      background-color: green;
+      color: white; }
+      .nba-section div.nba:hover h1, .nba-section div.nba:hover p {
+        -webkit-transition: all 15ms linear;
+        -o-transition: all 15ms linear;
+        transition: all 15ms linear;
+        -webkit-transform: scale(1.4);
+        -ms-transform: scale(1.4);
+        transform: scale(1.4); }
 
 div.syllabus-heading {
+  margin: 0;
   background-color: green;
   color: white;
   text-align: center; }
@@ -214,14 +270,20 @@ div.syllabus {
       padding: 10px 20px 10px 20px;
       border-radius: 100%;
       background-color: white;
-      color: #28b765; }
+      color: rbg(40, 101, 183);
+      opacity: 0.8; }
+      div.syllabus .data-container .data abbr {
+        text-decoration: none;
+        border: 0;
+        cursor: pointer; }
       div.syllabus .data-container .data:hover {
         -webkit-transition: all 15ms linear;
         -o-transition: all 15ms linear;
         transition: all 15ms linear;
         -webkit-transform: translateY(5px) scale(1.1);
         -ms-transform: translateY(5px) scale(1.1);
-        transform: translateY(5px) scale(1.1); }
+        transform: translateY(5px) scale(1.1);
+        opacity: 1; }
     div.syllabus .data-container .option {
       display: none; }
       div.syllabus .data-container .option .data {
@@ -230,13 +292,12 @@ div.syllabus {
 div.map {
   padding: 0;
   margin: 0;
-  height: 300px;
-  width: 100%;
-  background-color: #eee; }
+  height: 50vh;
+  width: 100%; }
   div.map .map-sec1 {
     padding: 0;
     height: 100%;
-    background-color: red;
+    background-color: white;
     border-right: 1px solid #ccc; }
     div.map .map-sec1 #map {
       padding: 5%;
@@ -245,7 +306,7 @@ div.map {
   div.map .map-sec2 {
     height: 100%;
     padding-left: 0;
-    background-color: blue; }
+    background-color: white; }
     div.map .map-sec2 .col-xs-12 {
       height: 50vh; }
 
