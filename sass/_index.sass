@@ -1,3 +1,5 @@
+//// max-width: 991px
+
 $four: white
 
 *
@@ -143,11 +145,7 @@ div.home-nav-section
     position: relative
     height: 100%
     h1
-      position: relative
-      display: inline-block
-      left: 1px
-      right: 1px
-      top: 40%
+
 
 
 
@@ -163,7 +161,7 @@ div.home-nav-section
   background-color: green
   color: white
   text-align: center
-  font-size: 4em
+  font-size: 2.5em
 
 
 .nba-section
@@ -245,33 +243,130 @@ div.syllabus
 
 // Map
 
-div.map
-  padding: 0
-  margin: 0
-  height: 50vh
-  width: 100%
-
-  .map-sec1
+.map-container
+  height: 100%
+  div.map
     padding: 0
+    margin: 0
+    width: 100%
     height: 100%
-    background-color: white
-    border-right: 1px solid #ccc
-    #map
-      padding: 5%
-      width: 90%
-      height: 90%
+    .map-sec1
+      padding: 0
+      height: 100%
+      background-color: white
+      div.content
+        height: 100%
+        color: green
+        text-align: center
+        img
+          @media (max-width: 991px)
+            display: none
 
-  .map-sec2
-    height: 100%
-    padding-left:  0
-    background-color: white
-    .col-xs-12
-      height: 50vh
-
-
+    .map-sec2
+      height: 100%
+      padding: 0
+      border: 1px solid #ccc
+      border-top: 0
+      border-right: 0
+      border-bottom: 0
+      background-color: pink
+      #map
+        margin: 3%
+        height: 90%
+        width: 90
+        background-color: yellow
 
 
 // ------------------------------------------------------------------ map ends here ----------------------------------------
-.space
-	width: 100%
-	height: 100vh
+
+
+//---------- footer
+
+footer
+  padding: 21px
+  background-color: green
+  color: white
+
+  .part1, .part2
+    .heading
+      margin-bottom: 10px
+      font-size: 21px
+      opacity: 0.9
+      &:hover
+        opacity: 1
+
+    .info
+      margin: 10px 0 10px 0
+      .address, .phone, .mail
+        padding: 10px
+        margin-bottom: 5px
+        opacity: 0.8
+      .address
+        &:hover
+          opacity: 1
+      .mail
+        &:hover
+          opacity: 1
+      .phone
+        &:hover
+          opacity: 1
+
+
+
+
+  .part2
+    .heading
+      &:hover
+        opacity: 1
+    .icons
+      button
+        width: 100px
+      .twitter
+        margin: 5px
+        button
+          border-radius: 5px
+          text-align: center
+          background: #00aced
+          opacity: 0.8
+          &:hover
+            opacity: 1
+          i
+            color: white
+            font-size: 25px
+      .facebook
+        margin: 5px
+        button
+          border-radius: 5px
+          text-align: center
+          background: #3b5998
+          opacity: 0.8
+          &:hover
+            opacity: 1
+          i
+            color: white
+            font-size: 25px
+      .youtube
+        margin: 5px
+        button
+          text-align: center
+          background: #bb0000
+          opacity: 0.8
+          &:hover
+            opacity: 1
+          i
+            color: white
+            font-size: 25px
+      .googleplus
+        margin: 5px
+        button
+          text-align: center
+          background: #dd4b39
+          opacity: 0.8
+          &:hover
+            opacity: 1
+          i
+            color: white
+            font-size: 25px
+
+
+//--------- footer ends here

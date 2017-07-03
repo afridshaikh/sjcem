@@ -198,18 +198,12 @@ div.home-nav-section {
   .welcome-message .part2 {
     position: relative;
     height: 100%; }
-    .welcome-message .part2 h1 {
-      position: relative;
-      display: inline-block;
-      left: 1px;
-      right: 1px;
-      top: 40%; }
 
 .nba-heading {
   background-color: green;
   color: white;
   text-align: center;
-  font-size: 4em; }
+  font-size: 2.5em; }
 
 .nba-section {
   margin: 0; }
@@ -303,30 +297,113 @@ div.syllabus {
       div.syllabus .data-container .option .data {
         padding: 20px 10px 20px 10px; }
 
-div.map {
-  padding: 0;
-  margin: 0;
-  height: 50vh;
-  width: 100%; }
-  div.map .map-sec1 {
+.map-container {
+  height: 100%; }
+  .map-container div.map {
     padding: 0;
-    height: 100%;
-    background-color: white;
-    border-right: 1px solid #ccc; }
-    div.map .map-sec1 #map {
-      padding: 5%;
-      width: 90%;
-      height: 90%; }
-  div.map .map-sec2 {
-    height: 100%;
-    padding-left: 0;
-    background-color: white; }
-    div.map .map-sec2 .col-xs-12 {
-      height: 50vh; }
+    margin: 0;
+    width: 100%;
+    height: 100%; }
+    .map-container div.map .map-sec1 {
+      padding: 0;
+      height: 100%;
+      background-color: white; }
+      .map-container div.map .map-sec1 div.content {
+        height: 100%;
+        color: green;
+        text-align: center; }
+        @media (max-width: 991px) {
+          .map-container div.map .map-sec1 div.content img {
+            display: none; } }
+    .map-container div.map .map-sec2 {
+      height: 100%;
+      padding: 0;
+      border: 1px solid #ccc;
+      border-top: 0;
+      border-right: 0;
+      border-bottom: 0;
+      background-color: pink; }
+      .map-container div.map .map-sec2 #map {
+        margin: 3%;
+        height: 90%;
+        width: 90;
+        background-color: yellow; }
 
-.space {
-  width: 100%;
-  height: 100vh; }
+footer {
+  padding: 21px;
+  background-color: green;
+  color: white; }
+  footer .part1 .heading, footer .part2 .heading {
+    margin-bottom: 10px;
+    font-size: 21px;
+    opacity: 0.9; }
+    footer .part1 .heading:hover, footer .part2 .heading:hover {
+      opacity: 1; }
+  footer .part1 .info, footer .part2 .info {
+    margin: 10px 0 10px 0; }
+    footer .part1 .info .address, footer .part1 .info .phone, footer .part1 .info .mail, footer .part2 .info .address, footer .part2 .info .phone, footer .part2 .info .mail {
+      padding: 10px;
+      margin-bottom: 5px;
+      opacity: 0.8; }
+    footer .part1 .info .address:hover, footer .part2 .info .address:hover {
+      opacity: 1; }
+    footer .part1 .info .mail:hover, footer .part2 .info .mail:hover {
+      opacity: 1; }
+    footer .part1 .info .phone:hover, footer .part2 .info .phone:hover {
+      opacity: 1; }
+  footer .part2 .heading:hover {
+    opacity: 1; }
+  footer .part2 .icons button {
+    width: 100px; }
+  footer .part2 .icons .twitter {
+    margin: 5px; }
+    footer .part2 .icons .twitter button {
+      border-radius: 5px;
+      text-align: center;
+      background: #00aced;
+      opacity: 0.8; }
+      footer .part2 .icons .twitter button:hover {
+        opacity: 1; }
+      footer .part2 .icons .twitter button i {
+        color: white;
+        font-size: 25px; }
+  footer .part2 .icons .facebook {
+    margin: 5px; }
+    footer .part2 .icons .facebook button {
+      border-radius: 5px;
+      text-align: center;
+      background: #3b5998;
+      opacity: 0.8; }
+      footer .part2 .icons .facebook button:hover {
+        opacity: 1; }
+      footer .part2 .icons .facebook button i {
+        color: white;
+        font-size: 25px; }
+  footer .part2 .icons .youtube {
+    margin: 5px; }
+    footer .part2 .icons .youtube button {
+      text-align: center;
+      background: #bb0000;
+      opacity: 0.8; }
+      footer .part2 .icons .youtube button:hover {
+        opacity: 1; }
+      footer .part2 .icons .youtube button i {
+        color: white;
+        font-size: 25px; }
+  footer .part2 .icons .googleplus {
+    margin: 5px; }
+    footer .part2 .icons .googleplus button {
+      text-align: center;
+      background: #dd4b39;
+      opacity: 0.8; }
+      footer .part2 .icons .googleplus button:hover {
+        opacity: 1; }
+      footer .part2 .icons .googleplus button i {
+        color: white;
+        font-size: 25px; }
+
+small.dept {
+  color: white; }
 
 .project-nav-container {
   height: 100vh;
