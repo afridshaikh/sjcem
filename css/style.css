@@ -49,6 +49,14 @@ div.home-nav-section {
   background-color: green; }
   .nav-row .nav-title {
     position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
     margin: 0;
     color: white;
     opacity: 1; }
@@ -58,20 +66,18 @@ div.home-nav-section {
       margin: 0; }
       @media (max-width: 991px) {
         .nav-row .nav-title h1 {
-          display: inline-block; } }
+          display: inline-block;
+          font-size: 5em; } }
     .nav-row .nav-title:hover {
       opacity: 1; }
     .nav-row .nav-title .menu-button-container {
       display: none;
-      position: relative;
-      left: 50%;
       padding: 5px;
       height: 100%; }
       @media (max-width: 991px) {
         .nav-row .nav-title .menu-button-container {
           display: inline-block; } }
       .nav-row .nav-title .menu-button-container .menu-button {
-        display: block;
         width: 30px;
         height: 2px;
         background-color: white; }

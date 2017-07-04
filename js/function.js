@@ -11,8 +11,7 @@ $(document).ready(function(){
     }
   );
 
-$('.menu-container-responsive').toggle();
-
+  $('.menu-container-responsive').toggle(false);
   $('.menu-button-container').click(
     function() {
       // $('.menu-container-responsive').css('display','block');
