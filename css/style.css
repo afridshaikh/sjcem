@@ -37,6 +37,9 @@ div.home-nav-section {
   background-color: lightgreen;
   opacity: 0.9;
   z-index: 1; }
+  @media (max-width: 991px) {
+    div.home-nav-section {
+      height: 100%; } }
 
 .nav-row {
   margin-top: 5px;
@@ -45,6 +48,7 @@ div.home-nav-section {
   margin: 0;
   background-color: green; }
   .nav-row .nav-title {
+    position: relative;
     margin: 0;
     color: white;
     opacity: 1; }
@@ -52,15 +56,50 @@ div.home-nav-section {
       display: inline-block;
       padding: 5px;
       margin: 0; }
+      @media (max-width: 991px) {
+        .nav-row .nav-title h1 {
+          display: inline-block; } }
     .nav-row .nav-title:hover {
       opacity: 1; }
+    .nav-row .nav-title .menu-button-container {
+      position: relative;
+      left: 50%;
+      padding: 5px;
+      display: none;
+      height: 100%; }
+      @media (max-width: 991px) {
+        .nav-row .nav-title .menu-button-container {
+          display: inline-block; } }
+      .nav-row .nav-title .menu-button-container .menu-button {
+        display: block;
+        content: "";
+        width: 30px;
+        height: 2px;
+        background-color: white; }
+        .nav-row .nav-title .menu-button-container .menu-button:first-child {
+          margin-bottom: 5px; }
+        .nav-row .nav-title .menu-button-container .menu-button:last-child {
+          margin-top: 5px; }
+    .nav-row .nav-title hr {
+      display: none; }
+      @media (max-width: 991px) {
+        .nav-row .nav-title hr {
+          display: block;
+          margin-top: 0; } }
   .nav-row .menu-container {
     text-align: right;
     color: white; }
+    @media (max-width: 991px) {
+      .nav-row .menu-container {
+        text-align: left;
+        display: none; } }
     .nav-row .menu-container ul.menu {
       display: inline-block;
       margin: 0;
       list-style: none; }
+      @media (max-width: 991px) {
+        .nav-row .menu-container ul.menu {
+          display: block; } }
       .nav-row .menu-container ul.menu li.menu-item {
         position: relative;
         float: left;
@@ -68,6 +107,21 @@ div.home-nav-section {
         margin: 5px;
         font-size: 1.4em;
         opacity: 0.7; }
+        @media (max-width: 991px) {
+          .nav-row .menu-container ul.menu li.menu-item .fa-home {
+            display: none; } }
+        .nav-row .menu-container ul.menu li.menu-item #home-text {
+          display: none; }
+          @media (max-width: 991px) {
+            .nav-row .menu-container ul.menu li.menu-item #home-text {
+              display: inline-block; } }
+        @media (max-width: 991px) {
+          .nav-row .menu-container ul.menu li.menu-item {
+            display: block;
+            float: none; }
+            .nav-row .menu-container ul.menu li.menu-item:hover ul.list li.list-item {
+              -webkit-animation: none;
+              animation: none; } }
         .nav-row .menu-container ul.menu li.menu-item a:active {
           color: white;
           opacity: 1; }
@@ -75,59 +129,63 @@ div.home-nav-section {
           color: white;
           opacity: 1; }
         .nav-row .menu-container ul.menu li.menu-item:hover {
-          -webkit-transform: translatey(-1px);
-          -ms-transform: translatey(-1px);
-          transform: translatey(-1px);
+          -webkit-transform: translateY(-1px);
+          -ms-transform: translateY(-1px);
+          transform: translateY(-1px);
           opacity: 1; }
           .nav-row .menu-container ul.menu li.menu-item:hover ul.list li.list-item {
             display: block; }
-            .nav-row .menu-container ul.menu li.menu-item:hover ul.list li.list-item:nth-child(1) {
-              -webkit-animation-name: animateMenu;
-              animation-name: animateMenu;
-              -webkit-animation-duration: 300ms;
-              animation-duration: 300ms;
-              -webkit-animation-timing-function: ease-in-out;
-              animation-timing-function: ease-in-out; }
-            .nav-row .menu-container ul.menu li.menu-item:hover ul.list li.list-item:nth-child(2) {
-              -webkit-animation-name: animateMenu;
-              animation-name: animateMenu;
-              -webkit-animation-duration: 600ms;
-              animation-duration: 600ms;
-              -webkit-animation-timing-function: ease-in-out;
-              animation-timing-function: ease-in-out; }
-            .nav-row .menu-container ul.menu li.menu-item:hover ul.list li.list-item:nth-child(3) {
-              -webkit-animation-name: animateMenu;
-              animation-name: animateMenu;
-              -webkit-animation-duration: 900ms;
-              animation-duration: 900ms;
-              -webkit-animation-timing-function: ease-in-out;
-              animation-timing-function: ease-in-out; }
-            .nav-row .menu-container ul.menu li.menu-item:hover ul.list li.list-item:nth-child(4) {
-              -webkit-animation-name: animateMenu;
-              animation-name: animateMenu;
-              -webkit-animation-duration: 1200ms;
-              animation-duration: 1200ms;
-              -webkit-animation-timing-function: ease-in-out;
-              animation-timing-function: ease-in-out; }
-            .nav-row .menu-container ul.menu li.menu-item:hover ul.list li.list-item:nth-child(5) {
-              -webkit-animation-name: animateMenu;
-              animation-name: animateMenu;
-              -webkit-animation-duration: 1500ms;
-              animation-duration: 1500ms;
-              -webkit-animation-timing-function: ease-in-out;
-              animation-timing-function: ease-in-out; }
-            .nav-row .menu-container ul.menu li.menu-item:hover ul.list li.list-item:nth-child(6) {
-              -webkit-animation-name: animateMenu;
-              animation-name: animateMenu;
-              -webkit-animation-duration: 1800ms;
-              animation-duration: 1800ms;
-              -webkit-animation-timing-function: ease-in-out;
-              animation-timing-function: ease-in-out; }
+            @media (min-width: 991px) {
+              .nav-row .menu-container ul.menu li.menu-item:hover ul.list li.list-item:nth-child(1) {
+                -webkit-animation-name: animateMenu;
+                animation-name: animateMenu;
+                -webkit-animation-duration: 300ms;
+                animation-duration: 300ms;
+                -webkit-animation-timing-function: ease-in-out;
+                animation-timing-function: ease-in-out; }
+              .nav-row .menu-container ul.menu li.menu-item:hover ul.list li.list-item:nth-child(2) {
+                -webkit-animation-name: animateMenu;
+                animation-name: animateMenu;
+                -webkit-animation-duration: 600ms;
+                animation-duration: 600ms;
+                -webkit-animation-timing-function: ease-in-out;
+                animation-timing-function: ease-in-out; }
+              .nav-row .menu-container ul.menu li.menu-item:hover ul.list li.list-item:nth-child(3) {
+                -webkit-animation-name: animateMenu;
+                animation-name: animateMenu;
+                -webkit-animation-duration: 900ms;
+                animation-duration: 900ms;
+                -webkit-animation-timing-function: ease-in-out;
+                animation-timing-function: ease-in-out; }
+              .nav-row .menu-container ul.menu li.menu-item:hover ul.list li.list-item:nth-child(4) {
+                -webkit-animation-name: animateMenu;
+                animation-name: animateMenu;
+                -webkit-animation-duration: 1200ms;
+                animation-duration: 1200ms;
+                -webkit-animation-timing-function: ease-in-out;
+                animation-timing-function: ease-in-out; }
+              .nav-row .menu-container ul.menu li.menu-item:hover ul.list li.list-item:nth-child(5) {
+                -webkit-animation-name: animateMenu;
+                animation-name: animateMenu;
+                -webkit-animation-duration: 1500ms;
+                animation-duration: 1500ms;
+                -webkit-animation-timing-function: ease-in-out;
+                animation-timing-function: ease-in-out; }
+              .nav-row .menu-container ul.menu li.menu-item:hover ul.list li.list-item:nth-child(6) {
+                -webkit-animation-name: animateMenu;
+                animation-name: animateMenu;
+                -webkit-animation-duration: 1800ms;
+                animation-duration: 1800ms;
+                -webkit-animation-timing-function: ease-in-out;
+                animation-timing-function: ease-in-out; } }
         .nav-row .menu-container ul.menu li.menu-item ul.list {
           position: absolute;
           width: 100%;
           background-color: none;
           list-style: none; }
+          @media (max-width: 991px) {
+            .nav-row .menu-container ul.menu li.menu-item ul.list {
+              position: relative; } }
           .nav-row .menu-container ul.menu li.menu-item ul.list li.list-item {
             color: white;
             padding: 10px;
@@ -135,16 +193,28 @@ div.home-nav-section {
             text-align: center;
             background-color: green;
             font-size: 0.8em; }
+            @media (max-width: 991px) {
+              .nav-row .menu-container ul.menu li.menu-item ul.list li.list-item {
+                text-align: left;
+                -webkit-animation: none;
+                animation: none; }
+                .nav-row .menu-container ul.menu li.menu-item ul.list li.list-item:hover {
+                  -webkit-transform: scale(1);
+                  -ms-transform: scale(1);
+                  transform: scale(1);
+                  -webkit-animation: none;
+                  animation: none; } }
             .nav-row .menu-container ul.menu li.menu-item ul.list li.list-item:first-child {
               padding-top: 1.2em; }
             .nav-row .menu-container ul.menu li.menu-item ul.list li.list-item:last-child {
               border-radius: 0 0 5px 5px; }
-            .nav-row .menu-container ul.menu li.menu-item ul.list li.list-item:hover {
-              opacity: 0.95;
-              -webkit-transform: scale(1.1);
-              -ms-transform: scale(1.1);
-              transform: scale(1.1);
-              border-radius: 5px; }
+            @media (min-width: 991px) {
+              .nav-row .menu-container ul.menu li.menu-item ul.list li.list-item:hover {
+                opacity: 0.95;
+                -webkit-transform: scale(1.1);
+                -ms-transform: scale(1.1);
+                transform: scale(1.1);
+                border-radius: 5px; } }
 
 @-webkit-keyframes animateMenu {
   0% {
@@ -417,7 +487,7 @@ footer {
         font-size: 25px; }
 
 .inner-row {
-  padding-left: 10px; }
+  padding-left: 0px; }
 
 small.dept {
   color: white; }
