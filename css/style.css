@@ -63,16 +63,15 @@ div.home-nav-section {
       opacity: 1; }
     .nav-row .nav-title .menu-button-container {
       position: relative;
+      display: none;
       left: 50%;
       padding: 5px;
-      display: none;
       height: 100%; }
       @media (max-width: 991px) {
         .nav-row .nav-title .menu-button-container {
           display: inline-block; } }
       .nav-row .nav-title .menu-button-container .menu-button {
         display: block;
-        content: "";
         width: 30px;
         height: 2px;
         background-color: white; }
@@ -80,6 +79,8 @@ div.home-nav-section {
           margin-bottom: 5px; }
         .nav-row .nav-title .menu-button-container .menu-button:last-child {
           margin-top: 5px; }
+      .nav-row .nav-title .menu-button-container:hover #menu-container {
+        display: block; }
     .nav-row .nav-title hr {
       display: none; }
       @media (max-width: 991px) {

@@ -5,13 +5,6 @@ $(document).ready(function(){
   $('#nav').load("../nav.html");
   $('#footer').load("../footer.html");
 
-  $('.menu-button-container').hover(function(){
-    $(this).css('transform','45deg');
-    $('#menu-container').css('display','block');
-  });
-
-
-
 // ---------------------------------------- index --------------------------------------
 
 //syllabus
