@@ -7,7 +7,10 @@ $(document).ready(function(){
 
   $('.menu-button-container').hover(function(){
     $(this).css('transform','45deg');
+    $('#menu-container').css('display','block');
   });
+
+
 
 // ---------------------------------------- index --------------------------------------
 
