@@ -52,19 +52,18 @@ div.home-nav-section
     margin: 0
     color: white
     opacity: 1
-
     h1
       display: inline-block
       padding: 5px
       margin: 0
       @media (max-width: 991px)
         display: inline-block
-
     &:hover
       opacity: 1
+
     .menu-button-container
-      position: relative
       display: none
+      position: relative
       left: 50%
       padding: 5px
       height: 100%
@@ -79,9 +78,6 @@ div.home-nav-section
           margin-bottom: 5px
         &:last-child
           margin-top: 5px
-      &:hover
-        #menu-container
-          display: block
 
     hr
       display: none
@@ -93,7 +89,6 @@ div.home-nav-section
     text-align: right
     color: white
     @media (max-width: 991px)
-      text-align: left
       display: none
     ul.menu
       display: inline-block
@@ -171,6 +166,32 @@ div.home-nav-section
                 opacity: 0.95
                 transform: scale(1.1)
                 border-radius:  5px
+
+  div.menu-container-responsive
+    display: none
+    @media (max-width: 991px)
+      display: block
+    ul.menu
+      list-style: none
+      font-size: 25px
+      li.menu-item
+        background: green
+        color: white
+        padding-top: 10px
+        div.heading
+          border-bottom-color: white
+          border-bottom-style: solid
+          border-bottom-width: 1px
+        ul.list
+          list-style: none
+          font-size: 21px
+          padding-left: 10px
+          display: none
+          li.list-item
+            padding: 2px
+
+
+
 
 @keyframes animateMenu
   0%

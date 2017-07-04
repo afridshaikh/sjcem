@@ -5,6 +5,25 @@ $(document).ready(function(){
   $('#nav').load("../nav.html");
   $('#footer').load("../footer.html");
 
+  $('div.menu-container-responsive li.menu-item').click(
+    function() {
+      $(this).find('ul.list').toggle(300);
+    }
+  );
+
+$('.menu-container-responsive').toggle();
+
+  $('.menu-button-container').click(
+    function() {
+      // $('.menu-container-responsive').css('display','block');
+      $('.menu-container-responsive').slideToggle();
+    }
+  );
+
+
+
+
+
 // ---------------------------------------- index --------------------------------------
 
 //syllabus
