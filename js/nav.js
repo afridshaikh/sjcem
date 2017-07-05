@@ -35,9 +35,9 @@ document.write(`
             <li class="menu-item">Achievements
               <ul class="list">
                 <li class="list-item">Faculty</li>
-                <li class="list-item"><a href="../pages/achievements/student.html">Student</a></li>
-                <li class="list-item"><a href="../pages/achievements/academic.html">Academic</a></li>
-                <li class="list-item"><a href="../pages/achievements/projects.html">Projects</a></li>
+                <li class="list-item"><a href="../pages/student.html">Student</a></li>
+                <li class="list-item"><a href="../pages/academic.html">Academic</a></li>
+                <li class="list-item"><a href="../pages/projects.html">Projects</a></li>
               </ul>
             </li>
           </ul>
@@ -69,9 +69,9 @@ document.write(`
               <div class="heading">Achievements</div>
               <ul class="list">
                 <li class="list-item">Faculty</li>
-                <li class="list-item"><a href="../pages/achievements/student.html">Student</a></li>
-                <li class="list-item"><a href="../pages/achievements/academic.html">Academic</a></li>
-                <li class="list-item"><a href="../pages/achievements/projects.html">Projects</a></li>
+                <li class="list-item"><a href="../pages/student.html">Student</a></li>
+                <li class="list-item"><a href="../pages/academic.html">Academic</a></li>
+                <li class="list-item"><a href="../pages/projects.html">Projects</a></li>
               </ul>
             </li>
           </ul>
