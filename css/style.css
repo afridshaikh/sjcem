@@ -312,7 +312,7 @@ div.welcome-message {
   width: 100%;
   height: auto;
   text-align: center;
-  background-image: url("../img/background/green.png");
+  background-image: url("img/background/green.png");
   background-size: cover;
   background-position: top; }
   div.welcome-message .text-container {
@@ -654,7 +654,7 @@ footer {
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  background-image: url("/img/background/board.jpg");
+  background-image: url("../img/background/board.jpg");
   background-size: cover;
   background-position: center;
   text-align: center;
