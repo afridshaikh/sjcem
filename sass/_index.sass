@@ -55,7 +55,8 @@ div.home-nav-section
   margin-bottom: 5px
   padding: 5px 10px 5px 10px
   margin: 0
-  background-color: lighten(green, 2.5%)
+  background-color: green
+  background-image: linear-gradient( to left, #60bb92, #43b44c)
   box-shadow: 0 2px 5px #666666
   @media (max-width: 991px)
     box-shadow: 0 5px 5px #666666
@@ -77,7 +78,7 @@ div.home-nav-section
       text-shadow: 2px 2px 5px white
       @media (max-width: 991px)
         display: inline-block
-        font-size: 4.7em
+        font-size: 5em
     &:hover
       opacity: 1
 
@@ -88,13 +89,13 @@ div.home-nav-section
       @media (max-width: 991px)
         display: inline-block
       .menu-button
-        width: 30px
-        height: 2px
+        width: 50px
+        height: 5px
         background-color: white
         &:first-child
-          margin-bottom: 5px
+          margin-bottom: 15px
         &:last-child
-          margin-top: 5px
+          margin-top: 15px
 
     hr
       display: none
@@ -172,7 +173,8 @@ div.home-nav-section
             padding: 10px
             display: none
             text-align: center
-            background-color: lighten(green, 3%)
+            background-color: green
+            background-image: linear-gradient( to left, #60bb92, #43b44c)
             font-size: 0.8em
             &:first-child
               padding-top: 1.2em
@@ -191,9 +193,10 @@ div.home-nav-section
       display: block
     ul.menu
       list-style: none
-      font-size: 2rem
+      font-size: 3rem
       li.menu-item
-        background: lighten(green, 5%)
+        background-color: green
+        background-image: linear-gradient( to left, #60bb92, darken(#43b44c, 50%))
         color: white
         padding-top: 10px
         div.heading
@@ -201,12 +204,13 @@ div.home-nav-section
           border-bottom-style: solid
           border-bottom-width: 1px
         ul.list
+          display: inline-block
           list-style: none
-          font-size: 1.7rem
           padding-left: 10px
           display: none
           li.list-item
             padding: 2px
+            font-size: 2.3rem
 
 
 
@@ -271,6 +275,18 @@ div.welcome-message
   height: 100%
   @media (max-width: 991px)
     height: 100vh
+    display: table
+    .nba-heading
+      display: table-row
+    .nba-section
+      display: table-row
+      .nba
+        &:last-child
+          margin-top: 50px
+        h1
+          font-size: 5rem
+        p
+          font-size: 2rem
 
 
 .nba-heading
@@ -407,6 +423,16 @@ div.syllabus
 
 
 //---------- footer
+
+.footer-container
+  @media (max-width: 991px)
+    .footer-row
+      .heading
+        font-size: 2.3rem
+      .sub-heading
+        font-size: 2rem
+      .details
+        font-size: 1.5rem
 
 footer
   padding: 21px

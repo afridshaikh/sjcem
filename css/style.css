@@ -51,7 +51,11 @@ div.home-nav-section {
   margin-bottom: 5px;
   padding: 5px 10px 5px 10px;
   margin: 0;
-  background-color: #008d00;
+  background-color: green;
+  background-image: -webkit-gradient(linear, right top, left top, from(#60bb92), to(#43b44c));
+  background-image: -webkit-linear-gradient(right, #60bb92, #43b44c);
+  background-image: -o-linear-gradient(right, #60bb92, #43b44c);
+  background-image: linear-gradient(to left, #60bb92, #43b44c);
   -webkit-box-shadow: 0 2px 5px #666666;
   box-shadow: 0 2px 5px #666666; }
   @media (max-width: 991px) {
@@ -86,7 +90,7 @@ div.home-nav-section {
       @media (max-width: 991px) {
         .nav-row .nav-title h1 {
           display: inline-block;
-          font-size: 4.7em; } }
+          font-size: 5em; } }
     .nav-row .nav-title:hover {
       opacity: 1; }
     .nav-row .nav-title .menu-button-container {
@@ -97,13 +101,13 @@ div.home-nav-section {
         .nav-row .nav-title .menu-button-container {
           display: inline-block; } }
       .nav-row .nav-title .menu-button-container .menu-button {
-        width: 30px;
-        height: 2px;
+        width: 50px;
+        height: 5px;
         background-color: white; }
         .nav-row .nav-title .menu-button-container .menu-button:first-child {
-          margin-bottom: 5px; }
+          margin-bottom: 15px; }
         .nav-row .nav-title .menu-button-container .menu-button:last-child {
-          margin-top: 5px; }
+          margin-top: 15px; }
     .nav-row .nav-title hr {
       display: none; }
       @media (max-width: 991px) {
@@ -214,7 +218,11 @@ div.home-nav-section {
             padding: 10px;
             display: none;
             text-align: center;
-            background-color: #008f00;
+            background-color: green;
+            background-image: -webkit-gradient(linear, right top, left top, from(#60bb92), to(#43b44c));
+            background-image: -webkit-linear-gradient(right, #60bb92, #43b44c);
+            background-image: -o-linear-gradient(right, #60bb92, #43b44c);
+            background-image: linear-gradient(to left, #60bb92, #43b44c);
             font-size: 0.8em; }
             @media (max-width: 991px) {
               .nav-row .menu-container ul.menu li.menu-item ul.list li.list-item {
@@ -246,9 +254,13 @@ div.home-nav-section {
         display: block; } }
     .nav-row div.menu-container-responsive ul.menu {
       list-style: none;
-      font-size: 2rem; }
+      font-size: 3rem; }
       .nav-row div.menu-container-responsive ul.menu li.menu-item {
-        background: #009a00;
+        background-color: green;
+        background-image: -webkit-gradient(linear, right top, left top, from(#60bb92), to(black));
+        background-image: -webkit-linear-gradient(right, #60bb92, black);
+        background-image: -o-linear-gradient(right, #60bb92, black);
+        background-image: linear-gradient(to left, #60bb92, black);
         color: white;
         padding-top: 10px; }
         .nav-row div.menu-container-responsive ul.menu li.menu-item div.heading {
@@ -256,12 +268,13 @@ div.home-nav-section {
           border-bottom-style: solid;
           border-bottom-width: 1px; }
         .nav-row div.menu-container-responsive ul.menu li.menu-item ul.list {
+          display: inline-block;
           list-style: none;
-          font-size: 1.7rem;
           padding-left: 10px;
           display: none; }
           .nav-row div.menu-container-responsive ul.menu li.menu-item ul.list li.list-item {
-            padding: 2px; }
+            padding: 2px;
+            font-size: 2.3rem; }
 
 @-webkit-keyframes animateMenu {
   0% {
@@ -335,7 +348,18 @@ div.welcome-message {
   height: 100%; }
   @media (max-width: 991px) {
     .nba-container {
-      height: 100vh; } }
+      height: 100vh;
+      display: table; }
+      .nba-container .nba-heading {
+        display: table-row; }
+      .nba-container .nba-section {
+        display: table-row; }
+        .nba-container .nba-section .nba:last-child {
+          margin-top: 50px; }
+        .nba-container .nba-section .nba h1 {
+          font-size: 5rem; }
+        .nba-container .nba-section .nba p {
+          font-size: 2rem; } }
 
 .nba-heading {
   padding: 20px;
@@ -474,6 +498,14 @@ div.syllabus {
         height: 90%;
         width: 90;
         background-color: yellow; }
+
+@media (max-width: 991px) {
+  .footer-container .footer-row .heading {
+    font-size: 2.3rem; }
+  .footer-container .footer-row .sub-heading {
+    font-size: 2rem; }
+  .footer-container .footer-row .details {
+    font-size: 1.5rem; } }
 
 footer {
   padding: 21px;
