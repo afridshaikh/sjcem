@@ -5,6 +5,14 @@ $youtube: #bb0000
 $googleplus: #dd4b39
 $four: white
 
+$tangerine: 'Tangerine', serif
+$Inconsolata: 'Inconsolata', serif
+$Vollkorn: 'Vollkorn', serif
+$Lato: 'Lato' serif
+html
+  @media (max-width: 991px)
+    font-size: 19px
+
 *
   padding: 0
   margin: 0
@@ -38,7 +46,7 @@ div.home-nav-section
   opacity: 0.9
   z-index: 1
   @media (max-width: 991px)
-    height: 100%
+    height: 100vh
 
 .nav-row
   margin-top: 5px
@@ -46,11 +54,16 @@ div.home-nav-section
   padding: 5px 10px 5px 10px
   margin: 0
   background-color: green
+  box-shadow: 0 2px 5px #666666
+  @media (max-width: 991px)
+    box-shadow: 0 5px 5px #666666
 
   .nav-title
     position: relative
-    display: flex
-    justify-content: flex-end
+    @media (max-width: 991px)
+      display: flex
+      justify-content: space-between
+      align-items: center
     margin: 0
     color: white
     opacity: 1
@@ -58,9 +71,11 @@ div.home-nav-section
       display: inline-block
       padding: 5px
       margin: 0
+      font-family: $Lato
+      text-shadow: 2px 2px 5px white
       @media (max-width: 991px)
         display: inline-block
-        font-size: 5em
+        font-size: 4.7em
     &:hover
       opacity: 1
 
@@ -169,11 +184,12 @@ div.home-nav-section
 
   div.menu-container-responsive
     display: none
+    z-index: 120
     @media (max-width: 991px)
       display: block
     ul.menu
       list-style: none
-      font-size: 25px
+      font-size: 2rem
       li.menu-item
         background: green
         color: white
@@ -184,7 +200,7 @@ div.home-nav-section
           border-bottom-width: 1px
         ul.list
           list-style: none
-          font-size: 21px
+          font-size: 1.7rem
           padding-left: 10px
           display: none
           li.list-item
@@ -207,29 +223,35 @@ div.home-nav-section
 
 
 
-.welcome-message
+div.welcome-message
   flex-grow: 1
   position: relative
   z-index: -1
   width: 100%
   height: auto
-  background-color: pink
-  .part1
+  text-align: center
+  background-image: url('/img/background/home.png')
+  background-size: cover
+  background-position: center
+  .text-container
     position: relative
-    top: 5%
-    bottom: 5%
-    height: 90%
-    position: relative
-    border: 2px solid black
-    border-left: 0
-    border-top: 0
-    border-bottom: 0
-    box-sizing: border-box
-
-  .part2
-    position: relative
-    height: 100%
+    top: 10vh
+    @media (max-width: 991px)
+      top: 20vh
     h1
+      color: white
+      font-family: fantasy
+      font-size: 4rem
+      @media (max-width: 991px)
+        font-size: 5rem
+    p
+      color: white
+      opacity: 0.95
+      font-family: Calibri
+      font-size: 2.5rem
+      @media (max-width: 991px)
+        font-family: 3rem
+
 
 //------------------------------------------------------------------heading ends here -------------------------
 
@@ -238,10 +260,11 @@ div.home-nav-section
 // NBA section
 
 .nba-heading
-  background-color: green
-  color: white
+  padding: 20px
+  background-color: white
+  color: green
   text-align: center
-  font-size: 2.5em
+  font-size: 5.5rem
 
 
 .nba-section
@@ -258,6 +281,13 @@ div.home-nav-section
 
     div
       width: auto
+    &:hover
+      a
+        color: white
+    h1
+      a
+        color: green
+
 
     p
       font-size: 15px
@@ -265,7 +295,7 @@ div.home-nav-section
     &:hover
       background-color: green
       color: white
-      h1, p
+      h1, p,
         transition: all 15ms linear
         transform: scale(1.4)
 

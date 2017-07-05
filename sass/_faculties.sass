@@ -1,16 +1,26 @@
 $linkedin: #007bb6
 $gmail: #dd4b39
+
+#nav
+  z-index: 120
+  height: auto
+  width: auto
 .faculty
   padding: 20px
   .part1
+    @media (max-width: 911px)
+      position: relative
     .snapshot
       text-align: center
       img
+        height: 150px
+        width: 150px
         border: 2px solid green
         display: inline-block
+        &:hover
+          transform: scale(1.1)
     .social-share
       display: flex
-      align-items:
       padding: 10px 50px 10px 50px
       justify-content: space-around
       i
@@ -27,8 +37,33 @@ $gmail: #dd4b39
 
 
   .part2
-    border-style: solid
-    border-color: #ccc
-    border-left: 1px
-    .details
-      color: green
+    border-left-style: solid
+    border-left-color: green
+    border-left-width: 1px
+    color: green
+
+
+.faculty-main
+  z-index: -1
+  position: relative
+  flex-grow: 1
+  background-image: url('/img/background/board.jpg')
+  background-size: cover
+  background-position: center
+  text-align: center
+  color: white
+  .faculty-text
+    position: relative
+    top: 20vh
+    h1
+      font-size: 6rem
+      opacity: 0.95
+    h2
+      font-weight: normal
+      font-size: 4rem
+      opacity: 0.8
+
+
+
+.faculty-row-divider
+  border-color: green
