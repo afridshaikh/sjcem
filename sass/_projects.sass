@@ -23,31 +23,89 @@ small.dept
   margin-bottom: 25px
   padding: 10px 20px 5px 20px
   h1
+    @media (max-width: 991px)
+      margin-bottom: 25px
+    margin-bottom: 10px
     margin-top: 25px
     text-align: center
     color: green
+    font-size: 4rem
+    small
+      color: green
+    @media (max-width: 991px)
+      font-size: 4.5rem
 
   table
     tr
-      &:hover
-        transition: all 1ms ease-in-out
-        transform: scale(1.01)
-        td
-          color: rgb(51,51,51)
-          opacity: 1
-        th
-          color: white
+      @media (max-width: 991px)
+        color: rgb(51,51,51)
+        opacity: 0.9
+      @media (min-width: 991px)
+        &:hover
+          transition: all 1ms ease-in-out
+          transform: scale(1.01)
+          td
+            color: rgb(51,51,51)
+            opacity: 1
+          th
+            color: white
 
-      &:nth-child(odd)
-        background-color: #eee
+        &:nth-child(odd)
+          background-color: #eee
 
     th
+      @media (max-width: 991px)
+        font-size: 2.5rem
       background-color: #4CAF50
       color: white
       text-align: center
-      font-size: 19px
+      font-size: 2.5rem
     td
       text-align: center
       color: #ccc - #ccc/2
       font-weight: 600
-      font-size: 15px
+      font-size: 1.7rem
+      @media (max-width: 991px)
+        color: rgb(51,51,51)
+        opacity: 0.9
+        font-size: 2.2rem
+
+
+.project-table
+  @media (max-width: 991px)
+    tr
+      th
+        &:nth-child(1),
+        &:nth-child(3)
+          display: none
+      td
+        &:nth-child(1),
+        &:nth-child(3)
+          display: none
+
+.student-table
+  @media (max-width: 991px)
+    tr
+      th
+        font-size: 2rem
+        &:nth-child(1)
+          display: none
+
+      td
+        font-size: 1.3rem
+        &:nth-child(1)
+          display: none
+
+
+.placement-table
+  @media (max-width: 991px)
+    tr
+      th
+        font-size: 2.5rem
+        &:nth-child(1)
+          display: none
+
+      td
+        font-size: 2.2rem
+        &:nth-child(1)
+          display: none
