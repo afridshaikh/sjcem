@@ -51,7 +51,7 @@ div.home-nav-section {
   margin-bottom: 5px;
   padding: 5px 10px 5px 10px;
   margin: 0;
-  background-color: green;
+  background-color: #008d00;
   -webkit-box-shadow: 0 2px 5px #666666;
   box-shadow: 0 2px 5px #666666; }
   @media (max-width: 991px) {
@@ -214,7 +214,7 @@ div.home-nav-section {
             padding: 10px;
             display: none;
             text-align: center;
-            background-color: green;
+            background-color: #008f00;
             font-size: 0.8em; }
             @media (max-width: 991px) {
               .nav-row .menu-container ul.menu li.menu-item ul.list li.list-item {
@@ -248,7 +248,7 @@ div.home-nav-section {
       list-style: none;
       font-size: 2rem; }
       .nav-row div.menu-container-responsive ul.menu li.menu-item {
-        background: green;
+        background: #009a00;
         color: white;
         padding-top: 10px; }
         .nav-row div.menu-container-responsive ul.menu li.menu-item div.heading {
@@ -299,9 +299,9 @@ div.welcome-message {
   width: 100%;
   height: auto;
   text-align: center;
-  background-image: url("/img/background/home.png");
+  background-image: url("/img/background/green.png");
   background-size: cover;
-  background-position: center; }
+  background-position: top; }
   div.welcome-message .text-container {
     position: relative;
     top: 10vh; }
@@ -310,11 +310,18 @@ div.welcome-message {
         top: 20vh; } }
     div.welcome-message .text-container h1 {
       color: white;
-      font-family: fantasy;
+      font-family: Calibri;
       font-size: 4rem; }
       @media (max-width: 991px) {
         div.welcome-message .text-container h1 {
           font-size: 5rem; } }
+    div.welcome-message .text-container h2 {
+      color: white;
+      font-family: Calibri;
+      font-size: 3rem; }
+      @media (max-width: 991px) {
+        div.welcome-message .text-container h2 {
+          font-size: 4rem; } }
     div.welcome-message .text-container p {
       color: white;
       opacity: 0.95;
@@ -324,12 +331,21 @@ div.welcome-message {
         div.welcome-message .text-container p {
           font-family: 3rem; } }
 
+.nba-container {
+  height: 100%; }
+  @media (max-width: 991px) {
+    .nba-container {
+      height: 100vh; } }
+
 .nba-heading {
   padding: 20px;
   background-color: white;
   color: green;
   text-align: center;
   font-size: 5.5rem; }
+  @media (max-width: 991px) {
+    .nba-heading {
+      height: 20vh; } }
 
 .nba-section {
   margin: 0; }
