@@ -19,25 +19,25 @@ document.write(`
             <li class="menu-item">Department
               <ul class="list">
                 <li class="list-item">HOD's Message</li>
-                <li class="list-item"><a href="/pages/faculties.html">Faculty</a></li>
+                <li class="list-item"><a href="../pages/faculties.html">Faculty</a></li>
                 <li class="list-item">Infrastructure</li>
                 <li class="list-item">E-Magazine</li>
               </ul>
             </li>
             <li class="menu-item">Placement &amp; other activities
               <ul class="list">
-                <li class="list-item"><a href="/pages/placement.html">Placement Record</a></li>
+                <li class="list-item"><a href="../pages/placement.html">Placement Record</a></li>
                 <li class="list-item">Companies</li>
-                <li class="list-item"><a href="/pages/StepEvents.html">Step Events</a></li>
+                <li class="list-item"><a href="../pages/StepEvents.html">Step Events</a></li>
                 <li class="list-item">About Step</li>
               </ul>
             </li>
             <li class="menu-item">Achievements
               <ul class="list">
                 <li class="list-item">Faculty</li>
-                <li class="list-item"><a href="/pages/achievements/student.html">Student</a></li>
-                <li class="list-item"><a href="/pages/achievements/academic.html">Academic</a></li>
-                <li class="list-item"><a href="/pages/achievements/projects.html">Projects</a></li>
+                <li class="list-item"><a href="../pages/achievements/student.html">Student</a></li>
+                <li class="list-item"><a href="../pages/achievements/academic.html">Academic</a></li>
+                <li class="list-item"><a href="../pages/achievements/projects.html">Projects</a></li>
               </ul>
             </li>
           </ul>
@@ -46,12 +46,12 @@ document.write(`
         <div class="col-md-7 col-xs-12 menu-container-responsive">
           <ul class="menu">
             <li class="menu-item">
-              <div class="heading"><a href="/index.html">Home</a></div>
+              <div class="heading"><a href="../index.html">Home</a></div>
             </li>
             <li class="menu-item"><div class="heading">Department</div>
               <ul class="list">
                 <li class="list-item">HOD's Message</li>
-                <li class="list-item"><a href="/pages/faculties.html">Faculty</a></li>
+                <li class="list-item"><a href="../pages/faculties.html">Faculty</a></li>
                 <li class="list-item">Infrastructure</li>
                 <li class="list-item">E-Magazine</li>
               </ul>
@@ -59,9 +59,9 @@ document.write(`
             <li class="menu-item">
               <div class="heading">Placement &amp; other activities</div>
               <ul class="list">
-                <li class="list-item"><a href="/pages/placement.html">Placement Record</a></li>
+                <li class="list-item"><a href="../pages/placement.html">Placement Record</a></li>
                 <li class="list-item">Companies</li>
-                <li class="list-item"><a href="/pages/StepEvents.html">Step Events</a></li>
+                <li class="list-item"><a href="../pages/StepEvents.html">Step Events</a></li>
                 <li class="list-item">About Step</li>
               </ul>
             </li>
@@ -69,9 +69,9 @@ document.write(`
               <div class="heading">Achievements</div>
               <ul class="list">
                 <li class="list-item">Faculty</li>
-                <li class="list-item"><a href="/pages/achievements/student.html">Student</a></li>
-                <li class="list-item"><a href="/pages/achievements/academic.html">Academic</a></li>
-                <li class="list-item"><a href="/pages/achievements/projects.html">Projects</a></li>
+                <li class="list-item"><a href="../pages/achievements/student.html">Student</a></li>
+                <li class="list-item"><a href="../pages/achievements/academic.html">Academic</a></li>
+                <li class="list-item"><a href="../pages/achievements/projects.html">Projects</a></li>
               </ul>
             </li>
           </ul>
