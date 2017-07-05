@@ -257,10 +257,10 @@ div.home-nav-section {
       font-size: 3rem; }
       .nav-row div.menu-container-responsive ul.menu li.menu-item {
         background-color: green;
-        background-image: -webkit-gradient(linear, right top, left top, from(#60bb92), to(black));
-        background-image: -webkit-linear-gradient(right, #60bb92, black);
-        background-image: -o-linear-gradient(right, #60bb92, black);
-        background-image: linear-gradient(to left, #60bb92, black);
+        background-image: -webkit-gradient(linear, right top, left top, from(#60bb92), to(#43b44c));
+        background-image: -webkit-linear-gradient(right, #60bb92, #43b44c);
+        background-image: -o-linear-gradient(right, #60bb92, #43b44c);
+        background-image: linear-gradient(to left, #60bb92, #43b44c);
         color: white;
         padding-top: 10px; }
         .nav-row div.menu-container-responsive ul.menu li.menu-item div.heading {
