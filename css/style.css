@@ -312,7 +312,7 @@ div.welcome-message {
   width: 100%;
   height: auto;
   text-align: center;
-  background-image: url("img/background/green.png");
+  background-image: url("../img/background/green.png");
   background-size: cover;
   background-position: top; }
   div.welcome-message .text-container {
