@@ -21,15 +21,15 @@ document.write(`
                 <li class="list-item">HOD's Message</li>
                 <li class="list-item"><a href="../pages/faculties.html">Faculty</a></li>
                 <li class="list-item">Infrastructure</li>
-                <li class="list-item">E-Magazine</li>
+                <li class="list-item"><a href="../pages/magazine.html">E-Magazine</a></li>
               </ul>
             </li>
             <li class="menu-item">Placement &amp; other activities
               <ul class="list">
                 <li class="list-item"><a href="../pages/placement.html">Placement Record</a></li>
-                <li class="list-item">Companies</li>
+                <li class="list-item"><a href="../pages/companies.html">Companies</a></li>
                 <li class="list-item"><a href="../pages/StepEvents.html">Step Events</a></li>
-                <li class="list-item">About Step</li>
+                <li class="list-item"><a href="../pages/aboutstep.html">About Step</a></li>
               </ul>
             </li>
             <li class="menu-item">Achievements
@@ -53,16 +53,16 @@ document.write(`
                 <li class="list-item">HOD's Message</li>
                 <li class="list-item"><a href="../pages/faculties.html">Faculty</a></li>
                 <li class="list-item">Infrastructure</li>
-                <li class="list-item">E-Magazine</li>
+                <li class="list-item"><a href="../pages/magazine.html">E-Magazine</a></li>
               </ul>
             </li>
             <li class="menu-item">
               <div class="heading">Placement &amp; other activities</div>
               <ul class="list">
                 <li class="list-item"><a href="../pages/placement.html">Placement Record</a></li>
-                <li class="list-item">Companies</li>
+                <li class="list-item"><a href="../pages/companies.html">Companies</a></li>
                 <li class="list-item"><a href="../pages/StepEvents.html">Step Events</a></li>
-                <li class="list-item">About Step</li>
+                <li class="list-item"><a href="../pages/aboutstep.html">About Step</a></li>
               </ul>
             </li>
             <li class="menu-item">

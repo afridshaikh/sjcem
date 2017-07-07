@@ -1,15 +1,52 @@
-.vision
+
+#nba-nav-container
+  height: 100%
   @media (max-width: 991px)
-    margin-top: 100px
-    margin-bottom: 100px
-  text-align: center
-  .heading
-    padding-top: 20px
-    padding-bottom: 10px
-    font-size: 5rem
+    height: 100%
+
+.nba
+  height: 100%
+  @media (max-width: 991px)
+    height: 100%
+  h1
+    text-align: center
     color: green
-  .content
-    padding: 20px
-    font-size: 2rem
-    &:hover
-      transform: scale(1.01)
+    font-size: 4rem
+    @media (max-width: 991px)
+      font-size: 4.5rem
+
+#table-peo, #table-pso
+  @media (max-width: 991px)
+    tr
+      th
+        &:first-child
+          display: none
+      td
+        &:first-child
+          display: none
+
+
+#vision-heading
+  color: green
+  font-size: 6rem
+  @media (max-width: 991px)
+    font-size: 5rem
+
+#vision-text
+  border-left-color: green
+  border-left-style: solid
+  border-left-width: 5px
+  color: rgb(51,51,51)
+  font-size: 3rem
+  @media (max-width: 991px)
+    font-size: 3.2rem
+    padding-left: 20px
+
+
+#vision-container
+  text-align: center
+  padding-top: 50px
+  padding-bottom: 50px
+
+#vision-text-container
+  display: inline-block

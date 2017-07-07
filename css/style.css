@@ -39,7 +39,6 @@ div.home-nav-section {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  background-color: lightgreen;
   opacity: 0.9;
   z-index: 1; }
   @media (max-width: 991px) {
@@ -52,10 +51,10 @@ div.home-nav-section {
   padding: 5px 10px 5px 10px;
   margin: 0;
   background-color: green;
-  background-image: -webkit-gradient(linear, right top, left top, from(#60bb92), to(#43b44c));
-  background-image: -webkit-linear-gradient(right, #60bb92, #43b44c);
-  background-image: -o-linear-gradient(right, #60bb92, #43b44c);
-  background-image: linear-gradient(to left, #60bb92, #43b44c);
+  background-image: -webkit-gradient(linear, left top, right top, from(#092f6e), to(#358f3c));
+  background-image: -webkit-linear-gradient(left, #092f6e, #358f3c);
+  background-image: -o-linear-gradient(left, #092f6e, #358f3c);
+  background-image: linear-gradient(to right, #092f6e, #358f3c);
   -webkit-box-shadow: 0 2px 5px #666666;
   box-shadow: 0 2px 5px #666666; }
   @media (max-width: 991px) {
@@ -95,8 +94,7 @@ div.home-nav-section {
       opacity: 1; }
     .nav-row .nav-title .menu-button-container {
       display: none;
-      padding: 5px;
-      height: 100%; }
+      padding: 5px; }
       @media (max-width: 991px) {
         .nav-row .nav-title .menu-button-container {
           display: inline-block; } }
@@ -219,10 +217,10 @@ div.home-nav-section {
             display: none;
             text-align: center;
             background-color: green;
-            background-image: -webkit-gradient(linear, right top, left top, from(#60bb92), to(#43b44c));
-            background-image: -webkit-linear-gradient(right, #60bb92, #43b44c);
-            background-image: -o-linear-gradient(right, #60bb92, #43b44c);
-            background-image: linear-gradient(to left, #60bb92, #43b44c);
+            background-image: -webkit-gradient(linear, left top, right top, from(#092f6e), to(#358f3c));
+            background-image: -webkit-linear-gradient(left, #092f6e, #358f3c);
+            background-image: -o-linear-gradient(left, #092f6e, #358f3c);
+            background-image: linear-gradient(to right, #092f6e, #358f3c);
             font-size: 0.8em; }
             @media (max-width: 991px) {
               .nav-row .menu-container ul.menu li.menu-item ul.list li.list-item {
@@ -257,10 +255,10 @@ div.home-nav-section {
       font-size: 3rem; }
       .nav-row div.menu-container-responsive ul.menu li.menu-item {
         background-color: green;
-        background-image: -webkit-gradient(linear, right top, left top, from(#60bb92), to(#43b44c));
-        background-image: -webkit-linear-gradient(right, #60bb92, #43b44c);
-        background-image: -o-linear-gradient(right, #60bb92, #43b44c);
-        background-image: linear-gradient(to left, #60bb92, #43b44c);
+        background-image: -webkit-gradient(linear, left top, right top, from(#092f6e), to(#358f3c));
+        background-image: -webkit-linear-gradient(left, #092f6e, #358f3c);
+        background-image: -o-linear-gradient(left, #092f6e, #358f3c);
+        background-image: linear-gradient(to right, #092f6e, #358f3c);
         color: white;
         padding-top: 10px; }
         .nav-row div.menu-container-responsive ul.menu li.menu-item div.heading {
@@ -303,6 +301,7 @@ div.home-nav-section {
     opacity: 1; } }
 
 div.welcome-message {
+  background-color: lightgreen;
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
@@ -425,6 +424,11 @@ div.syllabus-heading {
   background-color: green;
   color: white;
   text-align: center; }
+  div.syllabus-heading h2 {
+    font-size: 4rem; }
+    @media (max-width: 991px) {
+      div.syllabus-heading h2 {
+        font-size: 4rem; } }
 
 div.syllabus {
   padding: 20px 0 50px 0;
@@ -448,6 +452,8 @@ div.syllabus {
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center; }
+    div.syllabus .data-container h2 {
+      font-size: 3rem; }
     div.syllabus .data-container .data {
       display: inline-block;
       margin: 5px;
@@ -455,7 +461,8 @@ div.syllabus {
       border-radius: 100%;
       background-color: white;
       color: rbg(40, 101, 183);
-      opacity: 0.8; }
+      opacity: 0.8;
+      font-size: 2rem; }
       div.syllabus .data-container .data abbr {
         text-decoration: none;
         border: 0;
@@ -679,25 +686,6 @@ footer {
 .faculty-row-divider {
   border-color: green; }
 
-.vision {
-  text-align: center; }
-  @media (max-width: 991px) {
-    .vision {
-      margin-top: 100px;
-      margin-bottom: 100px; } }
-  .vision .heading {
-    padding-top: 20px;
-    padding-bottom: 10px;
-    font-size: 5rem;
-    color: green; }
-  .vision .content {
-    padding: 20px;
-    font-size: 2rem; }
-    .vision .content:hover {
-      -webkit-transform: scale(1.01);
-      -ms-transform: scale(1.01);
-      transform: scale(1.01); }
-
 small.dept {
   color: white; }
 
@@ -761,9 +749,9 @@ small.dept {
         color: #333333;
         opacity: 1; }
       .table-row table tr:hover th {
-        color: white; }
-    .table-row table tr:nth-child(odd) {
-      background-color: #eee; } }
+        color: white; } }
+  .table-row table tr:nth-child(odd) {
+    background-color: #eee; }
   .table-row table th {
     background-color: #4CAF50;
     color: white;
@@ -808,3 +796,179 @@ small.dept {
     font-size: 2.2rem; }
     .placement-table tr td:nth-child(1) {
       display: none; } }
+
+.course-nav {
+  height: 100%; }
+  @media (max-width: 991px) {
+    .course-nav {
+      height: 100%; } }
+
+.course-year-container .course-year-heading {
+  text-align: center;
+  color: green;
+  font-size: 5rem;
+  margin-top: 50px; }
+
+.course-main {
+  height: 100%; }
+
+.course-download-link {
+  text-align: center;
+  color: green; }
+  @media (max-width: 991px) {
+    .course-download-link {
+      font-size: 2.5rem; } }
+
+#id-heading {
+  font-size: 5rem; }
+
+#nba-nav-container {
+  height: 100%; }
+  @media (max-width: 991px) {
+    #nba-nav-container {
+      height: 100%; } }
+
+.nba {
+  height: 100%; }
+  @media (max-width: 991px) {
+    .nba {
+      height: 100%; } }
+  .nba h1 {
+    text-align: center;
+    color: green;
+    font-size: 4rem; }
+    @media (max-width: 991px) {
+      .nba h1 {
+        font-size: 4.5rem; } }
+
+@media (max-width: 991px) {
+  #table-peo tr th:first-child, #table-pso tr th:first-child {
+    display: none; }
+  #table-peo tr td:first-child, #table-pso tr td:first-child {
+    display: none; } }
+
+#vision-heading {
+  color: green;
+  font-size: 6rem; }
+  @media (max-width: 991px) {
+    #vision-heading {
+      font-size: 5rem; } }
+
+#vision-text {
+  border-left-color: green;
+  border-left-style: solid;
+  border-left-width: 5px;
+  color: #333333;
+  font-size: 3rem; }
+  @media (max-width: 991px) {
+    #vision-text {
+      font-size: 3.2rem;
+      padding-left: 20px; } }
+
+#vision-container {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+
+#vision-text-container {
+  display: inline-block; }
+
+#magazine-page {
+  background-image: -webkit-radial-gradient(right, #092f6e, #358f3c);
+  background-image: -o-radial-gradient(right, #092f6e, #358f3c);
+  background-image: radial-gradient(to left, #092f6e, #358f3c);
+  background-position: center;
+  background-size: cover; }
+
+.maga-row {
+  text-align: center;
+  margin-top: 5vh; }
+  .maga-row h3 {
+    color: green;
+    font-size: 3rem;
+    font-family: cursive; }
+
+.maga-img {
+  height: 50vh;
+  width: 60vw;
+  display: inline-block;
+  background-image: url("../img/magazine.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+/*       companies      */
+#nav {
+  z-index: 1000; }
+
+.comp-heading {
+  margin-top: 50px; }
+
+.comp-img-container {
+  z-index: -2;
+  text-align: center;
+  padding: 10px; }
+  @media (max-width: 991px) {
+    .comp-img-container {
+      margin-top: 25px;
+      margin-bottom: 25px; } }
+
+.comp-img-row {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  z-index: -5; }
+
+.company-image {
+  z-index: -1;
+  height: 250px;
+  width: 100%;
+  background-color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  text-align: center; }
+  @media (max-width: 991px) {
+    .company-image {
+      height: 300px;
+      width: 100%; } }
+  .company-image img {
+    display: inline-block; }
+  .company-image:hover {
+    -webkit-transform: scale(1.1) translateY(-2px);
+    -ms-transform: scale(1.1) translateY(-2px);
+    transform: scale(1.1) translateY(-2px); }
+
+.companies-container {
+  text-align: center; }
+  .companies-container h1 {
+    font-size: 5rem;
+    color: green; }
+    @media (max-width: 991px) {
+      .companies-container h1 {
+        font-size: 5rem; } }
+
+#nav {
+  z-index: 1000; }
+
+.step-para {
+  margin-top: 50px;
+  margin-bottom: 10px;
+  font-size: 2.5rem;
+  color: green; }
+
+.step-img img {
+  width: 100%;
+  height: 100%; }
+
+.step-cos {
+  margin-bottom: 50px; }
+  .step-cos h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: green;
+    font-size: 2.5rem; }
+    @media (max-width: 991px) {
+      .step-cos h4 {
+        margin-top: 50px;
+        margin-bottom: 50px; } }
