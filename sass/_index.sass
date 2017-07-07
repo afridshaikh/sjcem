@@ -180,6 +180,7 @@ div.home-nav-section
             &:last-child
               border-radius: 0 0 5px 5px
             @media (min-width: 991px)
+              transition: all 300ms ease-in-out
               &:hover
                 opacity: 0.95
                 transform: scale(1.1)
@@ -395,11 +396,46 @@ div.syllabus
 
 // ------------------------------------------------------------------ syllabus ends here----------------------------------------
 
-// Map
+// Gallary
 
 
+.view-gallary-container
+  height: 50vh
+  width: 100%
+  display: flex
+  @media (max-width: 991px)
+    height: 25vh
+  .view-gallary-row
+    display: flex
+    width: 100%
+    align-items: stretch
+    .gallary-text
+      margin-top: 2%
+      margin-bottom: 2%
+      display: flex
+      align-items: center
+      justify-content: center
+      @media (max-width: 991px)
+        border: 2px solid green
+        border-radius: 15px
+        margin-left: 20px
+        margin-right: 20px
+      @media (min-width: 991px)
+        &:hover
+          border: 2px solid green
+          border-radius: 15px
+          h1
+            transition: all 300ms ease-in-out
+            transform: scale(1.1)
 
-// ------------------------------------------------------------------ map ends here ----------------------------------------
+      h1
+        font-family: cursive
+        color: green
+        text-align: center
+        @media (max-width: 991px)
+          font-size: 3rem
+
+// ------------------------------------------------------------------ Gallary ends here ----------------------------------------
 
 
 //---------- footer
