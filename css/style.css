@@ -612,6 +612,10 @@ footer {
   padding-left: 0px; }
 
 /* Faculty */
+.fac-container {
+  margin-left: 2%;
+  margin-right: 2%; }
+
 #nav {
   z-index: 120;
   height: auto;
@@ -659,6 +663,23 @@ footer {
     border-left-color: green;
     border-left-width: 1px;
     color: green; }
+    .faculty .part2 .fac-name-row h1 {
+      font-size: 3.8rem; }
+      .faculty .part2 .fac-name-row h1 small {
+        color: green;
+        font-size: 3rem; }
+    .faculty .part2 .show-hide h3 {
+      text-align: left;
+      font-size: 2.5rem; }
+      @media (max-width: 991px) {
+        .faculty .part2 .show-hide h3 {
+          text-align: center; } }
+      .faculty .part2 .show-hide h3 small {
+        color: green;
+        font-size: 2rem; }
+    .faculty .part2 .view-more h1 {
+      text-align: center;
+      font-size: 3rem; }
 
 .faculty-main {
   z-index: -1;
@@ -685,6 +706,14 @@ footer {
 
 .faculty-row-divider {
   border-color: green; }
+
+.non-teach-staff-heading {
+  color: green;
+  text-align: center;
+  margin-top: 50px; }
+  @media (max-width: 991px) {
+    .non-teach-staff-heading {
+      font-size: 4rem; } }
 
 small.dept {
   color: white; }
@@ -972,3 +1001,116 @@ small.dept {
       .step-cos h4 {
         margin-top: 50px;
         margin-bottom: 50px; } }
+
+#nav {
+  z-index: 1000; }
+
+.single-img-btn-container {
+  z-index: -1;
+  height: 100%; }
+  .single-img-btn-container .single-img {
+    z-index: -1;
+    position: relative;
+    padding-left: 0;
+    padding-right: 0; }
+    .single-img-btn-container .single-img img {
+      width: 100%;
+      max-height: 700px; }
+    .single-img-btn-container .single-img h2 {
+      color: #009a00;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      font-size: 5rem;
+      -webkit-animation-name: animateName;
+      animation-name: animateName;
+      -webkit-animation-duration: 3000ms;
+      animation-duration: 3000ms;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite; }
+      @media (max-width: 991px) {
+        .single-img-btn-container .single-img h2 {
+          font-size: 3.5rem;
+          right: 20px; } }
+  .single-img-btn-container .single-btn {
+    margin: 20px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .single-img-btn-container .single-btn button {
+      width: 100%;
+      background-color: green;
+      color: white;
+      font-size: 3rem; }
+
+@-webkit-keyframes animateName {
+  0% {
+    color: #092f6e; }
+  20% {
+    color: #0d439d; }
+  40% {
+    color: #43b44c; }
+  70% {
+    color: #358f3c; }
+  100% {
+    color: #0d439d; } }
+
+@keyframes animateName {
+  0% {
+    color: #092f6e; }
+  20% {
+    color: #0d439d; }
+  40% {
+    color: #43b44c; }
+  70% {
+    color: #358f3c; }
+  100% {
+    color: #0d439d; } }
+
+#nav {
+  z-index: 1000; }
+
+.carousel-inner {
+  z-index: -1; }
+  .carousel-inner img {
+    z-index: -1; }
+
+#myCarousel {
+  z-index: -1; }
+
+.gallary-container {
+  background-color: #eee; }
+  .gallary-container h1 {
+    font-size: 5rem;
+    color: green; }
+
+.gallary-img-row {
+  margin-top: 20px;
+  margin-bottom: 25px; }
+  @media (max-width: 991px) {
+    .gallary-img-row .gallary-img-container {
+      margin-top: 25px;
+      margin-bottom: 25px; } }
+  .gallary-img-row .gallary-img-container:hover {
+    -webkit-transform: scale(1.01);
+    -ms-transform: scale(1.01);
+    transform: scale(1.01); }
+    .gallary-img-row .gallary-img-container:hover img {
+      border: 5px solid green; }
+      .gallary-img-row .gallary-img-container:hover img:first-child {
+        -webkit-box-shadow: -5px 5px 3px #333333;
+        box-shadow: -5px 5px 3px #333333; }
+      .gallary-img-row .gallary-img-container:hover img:last-child {
+        -webkit-box-shadow: 5px 5px 3px #333333;
+        box-shadow: 5px 5px 3px #333333; }
+  .gallary-img-row .gallary-img-container img {
+    width: 100%;
+    height: 500px;
+    border-radius: 10px; }
+
+.cara-img {
+  height: 600px; }
+  @media (max-width: 991px) {
+    .cara-img {
+      height: 600px; } }

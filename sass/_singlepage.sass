@@ -1,0 +1,50 @@
+// placements
+
+#nav
+  z-index: 1000
+
+.single-img-btn-container
+  z-index: -1
+  height: 100%
+  .single-img
+    z-index: -1
+    position: relative
+    padding-left: 0
+    padding-right: 0
+    img
+      width: 100%
+      max-height: 700px
+    h2
+      color: lighten(green, 5%)
+      position: absolute
+      right: 10px
+      top: 10px
+      font-size: 5rem
+      @media (max-width: 991px)
+        font-size: 3.5rem
+        right: 20px
+      animation-name:  animateName
+      animation-duration: 3000ms
+      animation-iteration-count: infinite
+
+  .single-btn
+    margin: 20px
+    display: flex
+    button
+      width: 100%
+      background-color: green
+      color: white
+      font-size: 3rem
+
+
+@keyframes animateName
+  0%
+    color: #092f6e
+  20%
+    color: lighten(#092f6e, 10%)
+  40%
+    color: #43b44c
+  70%
+    color: darken(#43b44c, 10%)
+  100%
+    color: lighten(#092f6e, 10%)

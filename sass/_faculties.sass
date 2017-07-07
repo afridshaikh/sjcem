@@ -2,6 +2,11 @@
 $linkedin: #007bb6
 $gmail: #dd4b39
 
+.fac-container
+  margin-left: 2%
+  margin-right: 2%
+
+
 #nav
   z-index: 120
   height: auto
@@ -42,7 +47,25 @@ $gmail: #dd4b39
     border-left-color: green
     border-left-width: 1px
     color: green
-
+    .fac-name-row
+      h1
+        font-size: 3.8rem
+        small
+          color: green
+          font-size: 3rem
+    .show-hide
+      h3
+        text-align: left
+        @media (max-width: 991px)
+          text-align: center
+        font-size: 2.5rem
+        small
+          color: green
+          font-size: 2rem
+    .view-more
+      h1
+        text-align: center
+        font-size: 3rem
 
 .faculty-main
   z-index: -1
@@ -68,3 +91,10 @@ $gmail: #dd4b39
 
 .faculty-row-divider
   border-color: green
+
+.non-teach-staff-heading
+  color: green
+  text-align: center
+  margin-top: 50px
+  @media (max-width: 991px)
+    font-size: 4rem
