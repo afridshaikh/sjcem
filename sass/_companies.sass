@@ -1,5 +1,6 @@
 /*       companies      */
 #nav
+  position: relative
   z-index: 1000
 
 .companies-container
@@ -9,7 +10,6 @@
   margin-top: 50px
 
 .comp-img-container
-  z-index: -2
   text-align: center
   padding: 10px
   @media (max-width: 991px)
@@ -19,10 +19,9 @@
 .comp-img-row
   margin-top: 20px
   margin-bottom: 20px
-  z-index: -5
+  // z-index: -5
 
 .company-image
-  z-index: -1
   height: 250px
   width: 100%
   background-color: white
@@ -36,6 +35,7 @@
   text-align: center
   img
     display: inline-block
+  transition: all 300ms ease-in-out
   &:hover
     transform: scale(1.1) translateY(-2px)
 
