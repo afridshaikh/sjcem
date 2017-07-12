@@ -682,11 +682,14 @@ footer {
     -ms-flex-pack: distribute;
     justify-content: space-around; }
     .faculty .part1 .social-share i {
-      font-size: 25px;
+      font-size: 3rem;
       -webkit-transition: all 300ms ease-in-out;
       -o-transition: all 300ms ease-in-out;
       transition: all 300ms ease-in-out;
       cursor: pointer; }
+      @media (max-width: 991px) {
+        .faculty .part1 .social-share i {
+          font-size: 3rem; } }
       .faculty .part1 .social-share i:hover {
         -webkit-transform: scale(1.1) translateY(-2px);
         -ms-transform: scale(1.1) translateY(-2px);
