@@ -315,7 +315,7 @@ div.welcome-message {
   width: 100%;
   height: auto;
   text-align: center;
-  background-image: url("../img/background/green.png");
+  background-image: url("../img/background/green.jpg");
   background-size: cover;
   background-position: top; }
   div.welcome-message .text-container {
@@ -951,6 +951,7 @@ small.dept {
   display: inline-block; }
 
 #magazine-page {
+  background-color: lightgreen;
   background-image: -webkit-radial-gradient(right, #092f6e, #358f3c);
   background-image: -o-radial-gradient(right, #092f6e, #358f3c);
   background-image: radial-gradient(to left, #092f6e, #358f3c);
