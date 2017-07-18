@@ -126,6 +126,15 @@ $('#view-more-btn8').click(function() {
 });
 
 
+$('#show-hide9').toggle();
+var angle9 = 180;
+$('#view-more-btn9').click(function() {
+  $(this).css('transition', 'all 500ms ease-in-out');
+  $(this).css('transform', 'rotate('+ angle9 +'deg)');
+  $('#show-hide9').toggle(500);
+  angle9 = 180 - angle9 ;
+});
+
 
 
 

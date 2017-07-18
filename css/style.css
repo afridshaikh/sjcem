@@ -1160,3 +1160,31 @@ small.dept {
   @media (max-width: 991px) {
     .cara-img {
       height: 600px; } }
+
+.hod-message-container {
+  padding: 100px; }
+  @media (max-width: 991px) {
+    .hod-message-container {
+      padding: 50px; } }
+
+.hod-header {
+  text-align: center;
+  color: green; }
+  .hod-header h1 {
+    font-size: 5rem; }
+    @media (max-width: 991px) {
+      .hod-header h1 {
+        font-size: 4rem; } }
+  .hod-header small {
+    color: green;
+    font-size: 3rem; }
+  .hod-header img {
+    display: inline; }
+    @media (max-width: 991px) {
+      .hod-header img {
+        height: 250px;
+        width: 250px; } }
+
+.hod-msg p {
+  font-size: 2rem;
+  color: green; }

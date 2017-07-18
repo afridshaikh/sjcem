@@ -18,7 +18,7 @@ document.write(`
             </li>
             <li class="menu-item">Department
               <ul class="list">
-                <li class="list-item">HOD's Message</li>
+                <li class="list-item"><a href="../pages/hod_message.html">HOD's Message</a></li>
                 <li class="list-item"><a href="../pages/faculties.html">Faculty</a></li>
                 <li class="list-item"><a href="../pages/infrastructure.html">Infrastructure</a></li>
                 <li class="list-item"><a href="../pages/magazine.html">E-Magazine</a></li>
@@ -49,7 +49,7 @@ document.write(`
             </li>
             <li class="menu-item"><div class="heading">Department</div>
               <ul class="list">
-                <li class="list-item">HOD's Message</li>
+                <li class="list-item"><a href="../pages/hod_message.html">HOD's Message</a></li>
                 <li class="list-item"><a href="../pages/faculties.html">Faculty</a></li>
                 <li class="list-item"><a href="../pages/infrastructure.html">Infrastructure</a></li>
                 <li class="list-item"><a href="../pages/magazine.html">E-Magazine</a></li>
